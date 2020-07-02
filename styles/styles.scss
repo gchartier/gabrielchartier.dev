@@ -1,0 +1,179 @@
+$color1: rgb(31, 30, 34);
+$color2: rgb(239, 247, 255);
+$accentColor1: rgb(103, 163, 111);
+$fontFamily: futura;
+$buttonTextSize: 1.4rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    background-color: transparent;
+    padding: 10px 18px;
+    border: 3px solid;
+    border-radius: 25px;
+    margin: 20px;
+    font-size: $buttonTextSize;
+    cursor: pointer;
+}
+
+#mainContent {
+    display: flex;
+    justify-content: space-between;
+    background: $color1 url("/images/splashPage.webp") center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        div img {
+            display: none;
+            width: 80px;
+        }
+    
+        #mobileNav {
+            display: none;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        li {
+            list-style: none;
+        }
+    
+        div:nth-child(1) {
+            display: flex;
+            align-items: flex-end;
+    
+            li {
+                margin-bottom: 10%;
+    
+                a {
+                    text-decoration: none;
+                    color: $color1;
+                    font-size: 1.8rem;
+                }
+    
+                a:hover {
+                    color: $accentColor1;
+                }
+            }
+        }
+    
+        div:nth-child(2) {
+            display: flex;
+            align-items: flex-end;
+    
+            img {
+                cursor: pointer;
+                padding: 12px;
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        order: 0;
+        padding-top: 8%;
+        padding-left: 8%;
+
+        h1 {
+            color: $color2;
+            font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+        }
+
+        h3 {
+            color: $color2;
+            font-size: 2rem;
+            color: $accentColor1;
+        }
+
+        button {
+            border-color: $accentColor1;
+            color: $accentColor1;
+        }
+
+        button:hover {
+            background-color: $accentColor1;
+            color: $color2;
+        }
+    }
+}
+
+header {
+    order: 1;
+    height: 95vh;
+    margin: 2.5vh 2.5vw;
+}
+
+.mobileNavIcon {
+    width: 80px;
+}
+
+#mobileNav {
+    display: none;
+}
+
+.navList {
+    transform-origin: 0% 0%;
+    transform: translate(130%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    background-color: $color2;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.open {
+    transform: translate(10%, 0);
+}
+
+
+@media only screen and (max-width: 364px) and (-webkit-min-device-pixel-ratio: 1) {
+    #mainContent > div {
+        button {
+            font-size: $buttonTextSize - .3;
+        }
+    }
+}
+
+@media only screen and (max-width: 612px) and (-webkit-min-device-pixel-ratio: 1) {
+    #mainContent > div {
+        align-items: flex-start;
+
+        button {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
+    #mainContent nav div img {
+        display: flex;
+    }
+
+    header {
+        margin-top: 0;
+    }
+}

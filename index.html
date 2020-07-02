@@ -2,8 +2,13 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Gabriel Chartier - Web Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="author" content="Gabriel Chartier - www.gabriel-chartier.dev">
 </head>
 
 <body>
@@ -13,12 +18,15 @@
         <header>
 
             <nav>
-                <ul>
-                    <li><a href="#aboutMe">about</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
+                <div>
+                    <img src="/images/mobileNav.svg" onclick="toggleNav()">
+                    <ul class="navList">
+                        <li><a href="#aboutMe">about</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
                 <ul>
                     <a href="https://github.com/gchartier" target="_blank">
                         <img src="/images/github.svg" alt="GitHub">
@@ -153,6 +161,7 @@
         <p>&copy 2020 Gabriel Chartier - contact@gabriel-chartier.dev</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
