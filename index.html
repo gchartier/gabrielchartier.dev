@@ -18,25 +18,31 @@
         <header>
 
             <nav>
-                <div>
+                <div class="hidden">
                     <img src="/images/mobileNav.svg" onclick="toggleNav()">
                     <ul class="navList">
-                        <li><a href="#aboutMe">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#projects">projects</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#aboutMe" onclick="closeNav()">about</a></li>
+                        <li><a href="#skills" onclick="closeNav()">skills</a></li>
+                        <li><a href="#projects" onclick="closeNav()">projects</a></li>
+                        <li><a href="#contact" onclick="closeNav()">contact</a></li>
                     </ul>
                 </div>
                 <ul>
-                    <a href="https://github.com/gchartier" target="_blank">
-                        <img src="/images/github.svg" alt="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/gabriel-chartier/" target="_blank">
-                        <img src="/images/linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://twitter.com/GabrielC_Dev" target="_blank">
-                        <img src="/images/twitter.svg" alt="Twitter">
-                    </a>
+                    <li>
+                        <a href="https://github.com/gchartier" target="_blank">
+                            <img src="/images/github.svg" alt="GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriel-chartier/" target="_blank">
+                            <img src="/images/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/GabrielC_Dev" target="_blank">
+                            <img src="/images/twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -51,51 +57,73 @@
     </section>
 
     <section id="aboutMe">
+        <div class="container">
+            <div id="aboutMeContent">
+                <h2>about me</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id orci mollis, semper nunc eu,
+                    dictum metus.
+                    Donec nisl mauris,emper in ante q, faucibus viverra tortor. Vivamus non tellus massa. Maecenas
+                    dapibus
+                    facilisis luctus convallis. Curabitur lorem orci, facilisis eujwjla pharetra nec, hendrerit at
+                    velit.
+                    Phasellus bibendum, lorem a sodales porttitor, sem velit aliquet odio, eget porta urna dui non
+                    purus. Sed
+                    aliquam faucibus elit ut tempus. Nunc in sem at lacus dictum ultricies.</p>
+            </div>
+            <img src="/images/aboutMe.jpg" alt="Portrait picture of Gabriel Chartier, he's smiling and looks nice.">
+        </div>
 
-        <h2>about me</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id orci mollis, semper nunc eu, dictum metus.
-            Donec nisl mauris,emper in ante q, faucibus viverra tortor. Vivamus non tellus massa. Maecenas dapibus
-            facilisis luctus convallis. Curabitur lorem orci, facilisis eujwjla pharetra nec, hendrerit at velit.
-            Phasellus bibendum, lorem a sodales porttitor, sem velit aliquet odio, eget porta urna dui non purus. Sed
-            aliquam faucibus elit ut tempus. Nunc in sem at lacus dictum ultricies.</p>
-        <img src="/images/aboutMe.webp" alt="Portrait picture of Gabriel Chartier, he's smiling and looks nice.">
 
     </section>
 
     <section id="skills">
 
-        <h2>skills</h2>
-        <p>I’m a lifelong learner who is always looking for the best languages and technologies for the problem at hand.
-            Here’s what I use. </p>
+        <div class="container">
+            <h2>skills</h2>
+            <p>I’m a lifelong learner who is always looking for the best languages and technologies for the problem at
+                hand.
+                Here’s what I use. </p>
 
-        <h4>Front-end</h4>
-        <h5>HTML5 / CSS3</h5>
-        <h5>React.js</h5>
-        <h5>React-Spring / GSAP</h5>
-        <h5>Javascript</h5>
-        <h5>Sass / Less</h5>
-        <h5>Bootstrap</h5>
-        <h5>Flexbox / CSS Grid</h5>
+            <div id="skillCategories">
+                <div class="skillCategory">
+                    <h4>Front-end</h4>
+                    <h5>HTML5 / CSS3</h5>
+                    <h5>React.js</h5>
+                    <h5>React-Spring / GSAP</h5>
+                    <h5>Javascript</h5>
+                    <h5>Sass / Less</h5>
+                    <h5>Bootstrap</h5>
+                    <h5>Flexbox / CSS Grid</h5>
+                </div>
 
-        <h4>Back-end</h4>
-        <h5>Django / Python</h5>
-        <h5>RESTful APIs</h5>
-        <h5>Node.js</h5>
-        <h5>Express.js / Mongoose</h5>
-        <h5>MongoDB</h5>
-        <h5>PostgreSQL</h5>
+                <div class="skillCategory">
+                    <h4>Back-end</h4>
+                    <h5>Django / Python</h5>
+                    <h5>RESTful APIs</h5>
+                    <h5>Node.js</h5>
+                    <h5>Express.js / Mongoose</h5>
+                    <h5>MongoDB</h5>
+                    <h5>PostgreSQL</h5>
+                </div>
 
-        <h4>Design</h4>
-        <h5>Sketch</h5>
-        <h5>Material Design</h5>
-        <h5>AdobeXD</h5>
-        <h5>Adobe Illustrator</h5>
+                <div class="skillCategory">
+                    <h4>Design</h4>
+                    <h5>Sketch</h5>
+                    <h5>Material Design</h5>
+                    <h5>AdobeXD</h5>
+                    <h5>Adobe Illustrator</h5>
+                </div>
 
-        <h4>Dev Tools</h4>
-        <h5>Git</h5>
-        <h5>Visual Studio Code</h5>
-        <h5>Digital Ocean / DO Spaces</h5>
-        <h5>Netlify</h5>
+                <div class="skillCategory">
+                    <h4>Dev Tools</h4>
+                    <h5>Git</h5>
+                    <h5>Visual Studio Code</h5>
+                    <h5>Digital Ocean / DO Spaces</h5>
+                    <h5>Netlify</h5>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -161,7 +189,7 @@
         <p>&copy 2020 Gabriel Chartier - contact@gabriel-chartier.dev</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="text/Javascript" src="script.js"></script>
 </body>
 
 </html>
