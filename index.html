@@ -57,6 +57,7 @@
     </section>
 
     <section id="aboutMe">
+
         <div class="container">
             <div id="aboutMeContent">
                 <h2>about me</h2>
@@ -73,16 +74,15 @@
             <img src="/images/aboutMe.jpg" alt="Portrait picture of Gabriel Chartier, he's smiling and looks nice.">
         </div>
 
-
     </section>
 
     <section id="skills">
 
         <div class="container">
             <h2>skills</h2>
-            <p>I’m a lifelong learner who is always looking for the best languages and technologies for the problem at
+            <p><em>I’m a lifelong learner who is always looking for the best languages and technologies for the problem at
                 hand.
-                Here’s what I use. </p>
+                Here’s what I use. </em></p>
 
             <div id="skillCategories">
                 <div class="skillCategory">
@@ -115,12 +115,14 @@
                 </div>
 
                 <div class="skillCategory">
-                    <h4>Dev Tools</h4>
-                    <h5>Git</h5>
+                    <h4>Dev & Deploy Tools</h4>
+                    <h5>Git / Terminal</h5>
                     <h5>Visual Studio Code</h5>
+                    <h5>Responsively / Dev Web Console</h5>
                     <h5>Digital Ocean / DO Spaces</h5>
                     <h5>Netlify</h5>
                 </div>
+
             </div>
 
         </div>
@@ -129,37 +131,58 @@
 
     <section id="projects">
 
-        <h2>projects</h2>
-        <p>In addition to this site, here are the projects that I’ve built.</p>
-        <div class="projectCard">
-            <h3>Windham County Tees</h3>
-            <h4>HTML / CSS / Design / Copywriting</h4>
-            <img src="windhamCountyTees.gif" alt="Gif of the sleek and simple company site for Windham County Tees">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in neque ac leo porttitor ultricies sed
-                vitae tortor. Proin pretium pulvinar pretium. Phasellus bibendum, lorem a sodales porttitor, sem velit
-                aliquet odio, eget porta urna dui non purus.</p>
-            <a href="https://www.windhamcountytees.com" target="_blank">
-                <img src="/images/websiteIcon.svg" alt="Live website icon for Windham County Tees project">
-            </a>
-            <a href="https://github.com/gchartier/WindhamCountyTees.com" target="_blank">
-                <img src="/images/viewCodeIcon.svg" alt="View code for Windham County Tees project">
-            </a>
-        </div>
+        <div class="container">
+            <h2>projects</h2>
+            <p><em>In addition to this site, here are the projects that I’ve built.</em></p>
 
-        <div class="projectCard">
-            <h3>Compendia</h3>
-            <h4>HTML / Sass / React / UI UX</h4>
-            <img src="compendia.webp"
-                alt="Gif of Compendia website showing the gorgeous UI of a comic book collecting website">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in neque ac leo porttitor ultricies sed
-                vitae tortor. Proin pretium pulvinar pretium. Phasellus bibendum, lorem a sodales porttitor, sem velit
-                aliquet odio, eget porta urna dui non purus.</p>
-            <a href="https://www.compendia-app.com" target="_blank">
-                <img src="/images/websiteIcon.svg" alt="Live website icon for Compendia">
-            </a>
-            <a href="https://github.com/gchartier/compendia" target="_blank">
-                <img src="/images/viewCodeIcon.svg" alt="View code for Compendia">
-            </a>
+            <div class="projectCard">
+                <img src="/images/windhamCountyTees.webp"
+                    alt="Gif of the sleek and simple company site for Windham County Tees">
+                <div>
+                    <h3>Windham County Tees</h3>
+                    <h4>HTML / CSS / Design / Copywriting</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in neque ac leo porttitor ultricies
+                        sed
+                        vitae tortor. Proin pretium pulvinar pretium. Phasellus bibendum, lorem a sodales porttitor, sem
+                        velit
+                        aliquet odio, eget porta urna dui non purus.</p>
+                    <div class="projectCardNav">
+                        <a href="https://www.windhamcountytees.com" target="_blank">
+                            <img src="/images/viewSite.svg" alt="Live website for Windham County Tees project">
+                            <p>website</p>
+                        </a>
+                        <a href="https://github.com/gchartier/WindhamCountyTees.com" target="_blank">
+                            <img src="/images/viewCode.svg" alt="View code for Windham County Tees project">
+                            <p>code</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectCard">
+                <img src="/images/compendia.webp"
+                    alt="Gif of Compendia website showing the gorgeous UI of a comic book collecting website">
+                <div>
+                    <h3>Compendia</h3>
+                    <h4>HTML / Sass / React / UI UX</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in neque ac leo porttitor ultricies
+                        sed
+                        vitae tortor. Proin pretium pulvinar pretium. Phasellus bibendum, lorem a sodales porttitor, sem
+                        velit
+                        aliquet odio, eget porta urna dui non purus.</p>
+                    <div class="projectCardNav">
+                        <a href="https://www.compendia-app.com" target="_blank">
+                            <img src="/images/viewSite.svg" alt="Live website for Compendia">
+                            <p>website</p>
+                        </a>
+                        <a href="https://github.com/gchartier/compendia" target="_blank">
+                            <img src="/images/viewCode.svg" alt="View code for Compendia">
+                            <p>code</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -168,25 +191,32 @@
 
         <div class="container">
             <h2>contact me!</h2>
-            <p> If you like my work, please reach out to me! I am open to new projects and opportunities.</p>
+            <p><em>If you like my work, please reach out to me! I am open to new projects and opportunities.</em></p>
             <form action="" method="get">
-                <label for="contactName">Name</label>
-                <input type="text" id="contactName" name="contactName" maxlength="30" size="text" required>
+                <div class="inputGroup">
+                    <label for="contactName">Name</label><br>
+                    <input type="text" id="contactName" name="contactName" maxlength="30" size="text" required>
+                </div>
 
-                <label for="contactEmail">Email</label>
-                <input type="email" id="contactEmail" name="contactEmail" maxlength="30" size="email" required>
+                <div class="inputGroup">
+                    <label for="contactEmail">Email</label><br>
+                    <input type="email" id="contactEmail" name="contactEmail" maxlength="30" size="email" required>
+                </div>
 
-                <label for="contactMessage">Message</label>
-                <textarea type="text" id="contactMessage" name="contactMessage" maxlength="200" required></textarea>
+                <div class="inputGroup">
+                    <label for="contactMessage">Message</label><br>
+                    <textarea type="text" id="contactMessage" name="contactMessage" maxlength="200" required></textarea>
+                </div>
 
-                <button id="contact" action="submit" type="button" value="contact">Contact</button>
+                <button id="contactButton" action="submit" type="button" value="contact">Contact</button>
             </form>
         </div>
 
     </section>
 
     <footer>
-        <p>&copy 2020 Gabriel Chartier - contact@gabriel-chartier.dev</p>
+        <p>&copy 2020 Gabriel Chartier -
+            <a href="emailto:contact@gabriel-chartier.dev">contact@gabriel-chartier.dev</a></p>
     </footer>
 
     <script type="text/Javascript" src="script.js"></script>

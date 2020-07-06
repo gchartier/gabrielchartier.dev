@@ -14,6 +14,14 @@ h2 {
   font-size: 2.3rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
 button {
   background-color: transparent;
   padding: 10px 18px;
@@ -26,8 +34,17 @@ button {
 
 .container {
   width: 80%;
+  padding: 5% 0;
   margin: auto;
   display: block;
+}
+
+.projectCard {
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  background: #28272c;
+  border-radius: 12px;
+  padding: 3%;
 }
 
 /* Landing Page */
@@ -198,10 +215,6 @@ nav ul li {
 }
 
 /* About Me */
-#aboutMe {
-  padding: 3%;
-}
-
 #aboutMe > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,20 +239,18 @@ nav ul li {
 /* Skills */
 #skills {
   background-color: #1f1e22;
-  padding: 3%;
 }
 
-#skills h2 {
+#skills h2, #skills p, #skills h5 {
   color: #eff7ff;
 }
 
 #skills p {
   margin: 2% 0;
-  color: #eff7ff;
 }
 
 #skills h5 {
-  color: #eff7ff;
+  padding: 1% 0;
 }
 
 #skillCategories {
@@ -257,6 +268,127 @@ nav ul li {
 
 .skillCategory h4 {
   color: #67a36f;
+  margin-bottom: 2%;
+}
+
+/* Projects */
+#projects {
+  background-color: #1f1e22;
+  color: #eff7ff;
+}
+
+#projects h2, #projects p {
+  margin-bottom: 3%;
+}
+
+#projects div[class="container"] {
+  padding-top: 0;
+}
+
+.projectCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4% 0;
+}
+
+.projectCard > img {
+  height: 280px;
+}
+
+.projectCard h4 {
+  color: #67a36f;
+  padding: 1% 0;
+}
+
+.projectCard > div {
+  padding: 0 2%;
+}
+
+.projectCard > div p {
+  padding: 3% 0;
+}
+
+.projectCardNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.projectCardNav a {
+  color: #67a36f;
+  text-decoration: none;
+}
+
+/* Contact */
+#contact {
+  background-color: #eff7ff;
+}
+
+#contact h2, #contact p {
+  margin-bottom: 3%;
+}
+
+#contact > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input, textarea {
+  background-color: #1f1e22;
+  color: #eff7ff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 3%;
+  width: 30vw;
+}
+
+#contactButton:hover {
+  background-color: #1f1e22;
+  color: #eff7ff;
+}
+
+/* Footer */
+footer {
+  background-color: #eff7ff;
+  text-align: center;
+  padding: 3%;
+}
+
+footer a {
+  color: #1f1e22;
 }
 
 /* Media Queries */
@@ -326,6 +458,27 @@ nav ul li {
         -ms-flex-order: 1;
             order: 1;
   }
+  #aboutMe {
+    padding-bottom: 8%;
+  }
+  #skills h2 {
+    padding-top: 8%;
+  }
+  .projectCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 794px) and (-webkit-min-device-pixel-ratio: 1) {
+  .projectCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -347,6 +500,9 @@ nav ul li {
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .skillCategory {
+    margin: 5% 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
