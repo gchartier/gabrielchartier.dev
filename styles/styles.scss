@@ -405,8 +405,17 @@ footer {
 }
 
 @media only screen and (max-width: 794px) and (-webkit-min-device-pixel-ratio: 1) {
+    
+
     .projectCard {
+        
         flex-direction: column;
+        align-content: center;
+
+        > img {
+            align-self: center;
+            padding-bottom: 4%;
+        }
     }
 }
 
@@ -427,5 +436,14 @@ footer {
 
     .skillCategory {
         margin: 5% 0;
+    }
+}
+
+@media only screen and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1) {
+    .projectCard {
+        > img {
+            width: 80%;
+            height: 80%;
+        }
     }
 }

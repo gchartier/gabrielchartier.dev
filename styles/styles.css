@@ -478,6 +478,14 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .projectCard > img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: 4%;
   }
 }
 
@@ -503,6 +511,13 @@ footer a {
   }
   .skillCategory {
     margin: 5% 0;
+  }
+}
+
+@media only screen and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1) {
+  .projectCard > img {
+    width: 80%;
+    height: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
