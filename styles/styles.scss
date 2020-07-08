@@ -63,6 +63,7 @@ button {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 
     nav {
         height: 100%;
@@ -234,6 +235,11 @@ nav ul li {
   background-color: $primaryBlack;
   color: $primaryWhite;
 
+  p a {
+      text-decoration: none;
+      color: $accentGreen;
+  }
+
   h2, p {
       margin-bottom: 3%;
   }
@@ -362,10 +368,6 @@ footer {
 
     .open {
         transform: translate(10%, 0);
-    }
-
-    .hidden {
-        overflow: hidden;
     }
 
     #aboutMe > div {

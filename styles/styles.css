@@ -59,6 +59,7 @@ button {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 #mainContent nav {
@@ -277,6 +278,11 @@ nav ul li {
   color: #eff7ff;
 }
 
+#projects p a {
+  text-decoration: none;
+  color: #67a36f;
+}
+
 #projects h2, #projects p {
   margin-bottom: 3%;
 }
@@ -430,9 +436,6 @@ footer a {
   .open {
     -webkit-transform: translate(10%, 0);
             transform: translate(10%, 0);
-  }
-  .hidden {
-    overflow: hidden;
   }
   #aboutMe > div {
     -webkit-box-orient: vertical;
