@@ -287,6 +287,7 @@ nav ul li {
     background-color: $primaryWhite;
 
     h2, p {
+        text-align: center;
         margin-bottom: 3%;
     }
 
@@ -407,6 +408,10 @@ footer {
             padding: 4% 0;
             max-width: 70%;
             height: auto;
+        }
+
+        > div {
+            text-align: center;
         }
     }
 }

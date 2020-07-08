@@ -337,6 +337,7 @@ nav ul li {
 }
 
 #contact h2, #contact p {
+  text-align: center;
   margin-bottom: 3%;
 }
 
@@ -484,6 +485,9 @@ footer a {
     padding: 4% 0;
     max-width: 70%;
     height: auto;
+  }
+  .projectCard > div {
+    text-align: center;
   }
 }
 
