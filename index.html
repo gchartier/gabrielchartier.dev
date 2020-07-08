@@ -193,30 +193,31 @@
         <div class="container">
             <h2>contact me!</h2>
             <p><em>If you like my work, please reach out to me! I am open to new projects and opportunities.</em></p>
-            <form action="" method="get">
+            <form action="https://formspree.io/contact@gabrielchartier.dev" method="post">
                 <div class="inputGroup">
                     <label for="contactName">Name</label><br>
-                    <input type="text" id="contactName" name="contactName" maxlength="30" size="text" required>
+                    <input type="text" id="name" name="name" maxlength="30" size="text" required>
                 </div>
 
                 <div class="inputGroup">
                     <label for="contactEmail">Email</label><br>
-                    <input type="email" id="contactEmail" name="contactEmail" maxlength="30" size="email" required>
+                    <input type="email" id="contactEmail" name="_replyto" maxlength="30" size="email" required>
                 </div>
 
                 <div class="inputGroup">
                     <label for="contactMessage">Message</label><br>
-                    <textarea type="text" id="contactMessage" name="contactMessage" maxlength="200" required></textarea>
+                    <textarea type="text" id="message" name="message" maxlength="300" rows="6" required></textarea>
                 </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 
-                <button id="contactButton" action="submit" type="button" value="contact">Contact</button>
+                <button id="contactButton" type="submit" value="Submit">Contact</button>
             </form>
         </div>
 
     </section>
 
     <footer>
-        <a href="emailto:contact@gabriel-chartier.dev">contact@gabriel-chartier.dev</a>
+        <a href="mailto: contact@gabrielchartier.dev">contact@gabrielchartier.dev</a>
         <p>&copy 2020 Gabriel Chartier</p>
     </footer>
 
