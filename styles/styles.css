@@ -281,7 +281,7 @@ nav ul li {
   margin-bottom: 3%;
 }
 
-#projects div[class="container"] {
+#projects div.container {
   padding-top: 0;
 }
 
@@ -289,7 +289,8 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 4% 0;
+  margin: 8% 0;
+  padding: 4%;
 }
 
 .projectCard > img {
@@ -372,7 +373,8 @@ input, textarea {
   border-radius: 8px;
   padding: 10px;
   margin: 3%;
-  width: 30vw;
+  width: 60vw;
+  max-width: 300px;
 }
 
 #contactButton:hover {
@@ -392,13 +394,7 @@ footer a {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 364px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mainContent > div button {
-    font-size: 1.1rem;
-  }
-}
-
-@media only screen and (max-width: 612px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
   #mainContent > div {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -407,9 +403,6 @@ footer a {
   #mainContent > div button {
     margin-left: 0;
   }
-}
-
-@media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
   #mainContent nav div img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -485,7 +478,9 @@ footer a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding-bottom: 4%;
+    padding: 4% 0;
+    max-width: 70%;
+    height: auto;
   }
 }
 
@@ -501,6 +496,9 @@ footer a {
 }
 
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
+  #mainContent > div button {
+    font-size: 1.1rem;
+  }
   #skillCategories {
     display: -ms-grid;
     display: grid;
@@ -511,13 +509,6 @@ footer a {
   }
   .skillCategory {
     margin: 5% 0;
-  }
-}
-
-@media only screen and (max-width: 410px) and (-webkit-min-device-pixel-ratio: 1) {
-  .projectCard > img {
-    width: 80%;
-    height: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
