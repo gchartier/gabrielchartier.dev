@@ -1,227 +1,342 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Gabriel Chartier - Web Dev</title>
+        <link rel="stylesheet" href="/styles/styles.css" />
+        <link rel="icon" href="/images/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Hello! Welcome to my software development portfolio."
+        />
+        <meta
+            name="author"
+            content="Gabriel Chartier - www.gabrielchartier.dev"
+        />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Gabriel Chartier - Web Developer</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="icon" href="images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hello! Welcome to my software development portfolio.">
-    <meta name="author" content="Gabriel Chartier - www.gabriel-chartier.dev">
-</head>
-
-<body>
-
-    <section id="mainContent">
-
-        <header>
-
-            <nav>
-                <div>
-                    <img src="/images/mobileNav.svg" onclick="toggleNav()">
-                    <ul class="navList">
-                        <li><a href="#aboutMe" onclick="closeNav()">about</a></li>
-                        <li><a href="#skills" onclick="closeNav()">skills</a></li>
-                        <li><a href="#projects" onclick="closeNav()">projects</a></li>
-                        <li><a href="#contact" onclick="closeNav()">contact</a></li>
+    <body>
+        <section id="mainContent">
+            <header>
+                <nav>
+                    <div>
+                        <img
+                            src="/images/mobileNav.svg"
+                            onclick="toggleNav()"
+                        />
+                        <ul class="navList">
+                            <li>
+                                <a href="#aboutMe" onclick="closeNav()"
+                                    >about</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#skills" onclick="closeNav()"
+                                    >skills</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#projects" onclick="closeNav()"
+                                    >projects</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#contact" onclick="closeNav()"
+                                    >contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://github.com/gchartier"
+                                target="_blank"
+                            >
+                                <img src="/images/github.svg" alt="GitHub" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/gabriel-chartier/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="/images/linkedin.svg"
+                                    alt="LinkedIn"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/GabrielC_Dev"
+                                target="_blank"
+                            >
+                                <img src="/images/twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
                     </ul>
-                </div>
-                <ul>
-                    <li>
-                        <a href="https://github.com/gchartier" target="_blank">
-                            <img src="/images/github.svg" alt="GitHub">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/gabriel-chartier/" target="_blank">
-                            <img src="/images/linkedin.svg" alt="LinkedIn">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/GabrielC_Dev" target="_blank">
-                            <img src="/images/twitter.svg" alt="Twitter">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                </nav>
+            </header>
 
-        </header>
-
-        <div>
-            <h1>Gabriel Chartier</h1>
-            <h3>full stack web developer</h3>
-            <button>View Resume</button>
-        </div>
-
-    </section>
-
-    <section id="aboutMe">
-
-        <div class="container">
-            <div id="aboutMeContent">
-                <h2>about me</h2>
-                <p>Thanks for stopping by my development portfolio! I'm an experienced and self-motivated software
-                    developer with an eye for design and a passion for learning. I am currently employed at Infosys
-                    McCamish Systems in Atlanta, GA as a Senior Systems Engineer designing and building
-                    client-facing life insurance software. When I'm not solving problems at work, I'm likely learning
-                    and building new things at home to keep my skills sharp, hiking, reading indie comic books, or
-                    listening to music.
-                </p>
+            <div>
+                <h1>Gabriel Chartier</h1>
+                <h3>full stack web developer</h3>
+                <button>View Resume</button>
             </div>
-            <!-- temporarily removing till I get an actual pic of myself up <img src="/images/aboutMe.jpg" alt="Portrait picture of Gabriel Chartier, he's smiling and looks nice."> -->
-        </div>
+        </section>
 
-    </section>
-
-    <section id="skills">
-
-        <div class="container">
-            <h2>skills</h2>
-            <p><em>I’m a lifelong learner who is always looking for the best languages and technologies for the problem
-                    at
-                    hand.
-                    Here’s what I use. </em></p>
-
-            <div id="skillCategories">
-                <div class="skillCategory">
-                    <h4>Front-end</h4>
-                    <h5>HTML5 / CSS3</h5>
-                    <h5>React.js</h5>
-                    <h5>React-Spring / GSAP</h5>
-                    <h5>JavaScript</h5>
-                    <h5>Sass / SCSS</h5>
-                    <h5>Bootstrap</h5>
-                    <h5>Flexbox / CSS Grid</h5>
-                </div>
-
-                <div class="skillCategory">
-                    <h4>Back-end</h4>
-                    <h5>Django / Python</h5>
-                    <h5>RESTful APIs</h5>
-                    <h5>Node.js</h5>
-                    <h5>Express.js / Mongoose</h5>
-                    <h5>MongoDB</h5>
-                    <h5>PostgreSQL</h5>
-                </div>
-
-                <div class="skillCategory">
-                    <h4>Design</h4>
-                    <h5>Sketch</h5>
-                    <h5>Material Design</h5>
-                    <h5>AdobeXD</h5>
-                    <h5>Adobe Illustrator</h5>
-                </div>
-
-                <div class="skillCategory">
-                    <h4>Dev & Deploy Tools</h4>
-                    <h5>Git / Terminal</h5>
-                    <h5>Visual Studio Code</h5>
-                    <h5>Responsively / Dev Web Console</h5>
-                    <h5>Digital Ocean / DO Spaces</h5>
-                    <h5>Netlify</h5>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="projects">
-
-        <div class="container">
-            <h2>projects</h2>
-            <p><em>In addition to <a href="https://github.com/gchartier/gabrielchartier.dev" target="_blank">this site</a>, here are the projects that I’ve built.</em></p>
-
-            <div class="projectCard">
-                <img src="/images/windhamCountyTees.webp"
-                    alt="Gif of the sleek and simple company site for Windham County Tees">
-                <div>
-                    <h3>Windham County Tees</h3>
-                    <h4>HTML5 / CSS3 / Design / Copywriting</h4>
-                    <p>Windham County Tees is a small business in Connecticut that needed a website. Every business
-                        should have one! I designed this site by hand using Sketch and built it out using the basics:
-                        HTML, CSS, and a tiny bit of JavaScript. This site is fully responsive and works great on
-                        tablet, mobile, as well as desktop. I also wrote all of the copy, and built it with accessibility 
-                        in mind.</p>
-                    <div class="projectCardNav">
-                        <a href="https://www.windhamcountytees.com" target="_blank">
-                            <img src="/images/viewSite.svg" alt="Live website for Windham County Tees project">
-                            <p>website</p>
-                        </a>
-                        <a href="https://github.com/gchartier/WindhamCountyTees.com" target="_blank">
-                            <img src="/images/viewCode.svg" alt="View code for Windham County Tees project">
-                            <p>code</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <img src="/images/compendia.webp"
-                    alt="Gif of Compendia website showing the gorgeous UI of a comic book collecting website">
-                <div>
-                    <h3>Compendia (In Progress)</h3>
-                    <h4>React / Django / Python / MongoDB / HTML5 / Sass</h4>
-                    <p>Compendia is an in-progress solution to several problems that I ran into with collecting comic books.
-                        I always wished I could have an app that I could see which comics I owned, which ones I
-                        wanted, and which new releases were waiting for me at the local comic shop each week all 
-                        in a user interface that was simple and usable. For this web app, I made a RESTful API using 
-                        Django Rest Framework to serve the comic data from the database to any user who has an account. This is 
-                        a real full-stack application that I designed, architected, and developed all myself.
+        <section id="aboutMe">
+            <div class="container">
+                <div id="aboutMeContent">
+                    <h2>about me</h2>
+                    <p>
+                        Thanks for stopping by my development portfolio! I'm an
+                        experienced and self-motivated software developer with
+                        an eye for design and a passion for learning. I am
+                        currently employed at Infosys McCamish Systems in
+                        Atlanta, GA as a Senior Systems Engineer designing and
+                        building client-facing life insurance software. When I'm
+                        not solving problems at work, I'm likely learning and
+                        building new things at home to keep my skills sharp,
+                        hiking, reading indie comic books, or listening to
+                        music.
                     </p>
-                    <div class="projectCardNav">
-                        <a href="https://www.compendia-app.com" target="_blank">
-                            <img src="/images/viewSite.svg" alt="Live website for Compendia">
-                            <p>website</p>
-                        </a>
-                        <a href="https://github.com/gchartier/compendia" target="_blank">
-                            <img src="/images/viewCode.svg" alt="View code for Compendia">
-                            <p>code</p>
-                        </a>
+                </div>
+                <!-- temporarily removing till I get an actual pic of myself up <img src="/images/aboutMe.jpg" alt="Portrait picture of Gabriel Chartier, he's smiling and looks nice."> -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>skills</h2>
+                <p>
+                    <em
+                        >I’m a lifelong learner who is always looking for the
+                        best languages and technologies for the problem at hand.
+                        Here’s what I use.
+                    </em>
+                </p>
+
+                <div id="skillCategories">
+                    <div class="skillCategory">
+                        <h4>Front-end</h4>
+                        <h5>HTML</h5>
+                        <h5>CSS</h5>
+                        <h5>React.js</h5>
+                        <h5>JavaScript ES6</h5>
+                        <h5>Sass / SCSS</h5>
+                    </div>
+
+                    <div class="skillCategory">
+                        <h4>Back-end</h4>
+                        <h5>Django / Python</h5>
+                        <h5>RESTful APIs</h5>
+                        <h5>Node.js</h5>
+                        <h5>MongoDB</h5>
+                        <h5>Java</h5>
+                        <h5>Kotlin</h5>
+                    </div>
+
+                    <div class="skillCategory">
+                        <h4>Design</h4>
+                        <h5>Sketch</h5>
+                        <h5>Material Design</h5>
+                        <h5>AdobeXD</h5>
+                        <h5>Adobe Illustrator</h5>
+                    </div>
+
+                    <div class="skillCategory">
+                        <h4>Dev & Deploy Tools</h4>
+                        <h5>Git</h5>
+                        <h5>Netlify</h5>
+                        <h5>Digital Ocean / DO Spaces</h5>
+                        <h5>Dev Web Console</h5>
+                        <h5>Responsively</h5>
+                        <h5>Google Lighthouse</h5>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <section id="projects">
+            <div class="container">
+                <h2>projects</h2>
+                <p>
+                    <em
+                        >In addition to
+                        <a
+                            href="https://github.com/gchartier/gabrielchartier.dev"
+                            target="_blank"
+                            >this site</a
+                        >, here are the projects that I’ve built.</em
+                    >
+                </p>
 
-    </section>
-
-    <section id="contact">
-
-        <div class="container">
-            <h2>contact me!</h2>
-            <p><em>If you like my work, please reach out to me! I am open to new projects and opportunities.</em></p>
-            <form action="https://formspree.io/contact@gabrielchartier.dev" method="post">
-                <div class="inputGroup">
-                    <label for="contactName">Name</label><br>
-                    <input type="text" id="name" name="name" maxlength="30" size="text" required>
+                <div class="projectCard">
+                    <img
+                        src="/images/windhamCountyTees.webp"
+                        alt="Gif of the sleek and simple company site for Windham County Tees"
+                    />
+                    <div>
+                        <h3>Windham County Tees</h3>
+                        <h4>HTML5 / CSS3 / Design / Copywriting</h4>
+                        <p>
+                            Windham County Tees is a small business in
+                            Connecticut that needed a website. Every business
+                            should have one! I designed this site by hand using
+                            Sketch and built it out using the basics: HTML, CSS,
+                            and a tiny bit of JavaScript. This site is fully
+                            responsive and works great on tablet, mobile, as
+                            well as desktop. I also wrote all of the copy, and
+                            built it with accessibility in mind.
+                        </p>
+                        <div class="projectCardNav">
+                            <a
+                                href="https://www.windhamcountytees.com"
+                                target="_blank"
+                            >
+                                <img
+                                    src="/images/viewSite.svg"
+                                    alt="Live website for Windham County Tees project"
+                                />
+                                <p>website</p>
+                            </a>
+                            <a
+                                href="https://github.com/gchartier/WindhamCountyTees.com"
+                                target="_blank"
+                            >
+                                <img
+                                    src="/images/viewCode.svg"
+                                    alt="View code for Windham County Tees project"
+                                />
+                                <p>code</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="inputGroup">
-                    <label for="contactEmail">Email</label><br>
-                    <input type="email" id="contactEmail" name="_replyto" maxlength="30" size="email" required>
+                <div class="projectCard">
+                    <img
+                        src="/images/compendia.webp"
+                        alt="Gif of Compendia website showing the gorgeous UI of a comic book collecting website"
+                    />
+                    <div>
+                        <h3>Compendia (In Progress)</h3>
+                        <h4>
+                            React / Django / Python / MongoDB / HTML5 / Sass
+                        </h4>
+                        <p>
+                            Compendia is an in-progress solution to several
+                            problems that I ran into with collecting comic
+                            books. I always wished I could have an app that I
+                            could see which comics I owned, which ones I wanted,
+                            and which new releases were waiting for me at the
+                            local comic shop each week all in a user interface
+                            that was simple and usable. For this web app, I made
+                            a RESTful API using Django Rest Framework to serve
+                            the comic data from the database to any user who has
+                            an account. This is a real full-stack application
+                            that I designed, architected, and developed all
+                            myself.
+                        </p>
+                        <div class="projectCardNav">
+                            <a
+                                href="https://www.compendia-app.com"
+                                target="_blank"
+                            >
+                                <img
+                                    src="/images/viewSite.svg"
+                                    alt="Live website for Compendia"
+                                />
+                                <p>website</p>
+                            </a>
+                            <a
+                                href="https://github.com/gchartier/compendia"
+                                target="_blank"
+                            >
+                                <img
+                                    src="/images/viewCode.svg"
+                                    alt="View code for Compendia"
+                                />
+                                <p>code</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="inputGroup">
-                    <label for="contactMessage">Message</label><br>
-                    <textarea type="text" id="message" name="message" maxlength="300" rows="6" required></textarea>
-                </div>
-                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        <section id="contact">
+            <div class="container">
+                <h2>contact me!</h2>
+                <p>
+                    <em
+                        >If you like my work, please reach out to me! I am open
+                        to new projects and opportunities.</em
+                    >
+                </p>
+                <form
+                    action="https://formspree.io/contact@gabrielchartier.dev"
+                    method="post"
+                >
+                    <div class="inputGroup">
+                        <label for="contactName">Name</label><br />
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            maxlength="30"
+                            size="text"
+                            required
+                        />
+                    </div>
 
-                <button id="contactButton" type="submit" value="Submit">Contact</button>
-            </form>
-        </div>
+                    <div class="inputGroup">
+                        <label for="contactEmail">Email</label><br />
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="_replyto"
+                            maxlength="30"
+                            size="email"
+                            required
+                        />
+                    </div>
 
-    </section>
+                    <div class="inputGroup">
+                        <label for="contactMessage">Message</label><br />
+                        <textarea
+                            type="text"
+                            id="message"
+                            name="message"
+                            maxlength="300"
+                            rows="6"
+                            required
+                        ></textarea>
+                    </div>
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        id="email-subject"
+                        value="Contact Form Submission"
+                    />
 
-    <footer>
-        <a href="mailto: contact@gabrielchartier.dev">contact@gabrielchartier.dev</a>
-        <p>&copy 2020 Gabriel Chartier</p>
-    </footer>
+                    <button id="contactButton" type="submit" value="Submit">
+                        Contact
+                    </button>
+                </form>
+            </div>
+        </section>
 
-    <script type="text/Javascript" src="script.js"></script>
-</body>
+        <footer>
+            <a href="mailto: contact@gabrielchartier.dev"
+                >contact@gabrielchartier.dev</a
+            >
+            <p>&copy 2020 Gabriel Chartier</p>
+        </footer>
 
+        <script type="text/Javascript" src="script.js"></script>
+    </body>
 </html>
