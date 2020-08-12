@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: futura;
+  font-family: "Overpass", sans-serif;
 }
 
 html {
@@ -160,7 +160,7 @@ button {
 
 #mainContent div h1 {
   color: #eff7ff;
-  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc( 40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #mainContent div h3 {
@@ -242,7 +242,9 @@ nav ul li {
   background-color: #1f1e22;
 }
 
-#skills h2, #skills p, #skills h5 {
+#skills h2,
+#skills p,
+#skills h5 {
   color: #eff7ff;
 }
 
@@ -283,7 +285,8 @@ nav ul li {
   color: #67a36f;
 }
 
-#projects h2, #projects p {
+#projects h2,
+#projects p {
   margin-bottom: 3%;
 }
 
@@ -336,7 +339,8 @@ nav ul li {
   background-color: #eff7ff;
 }
 
-#contact h2, #contact p {
+#contact h2,
+#contact p {
   text-align: center;
   margin-bottom: 3%;
 }
@@ -373,7 +377,8 @@ nav ul li {
           align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #1f1e22;
   color: #eff7ff;
   border: none;
@@ -398,6 +403,15 @@ footer {
 
 footer a {
   color: #1f1e22;
+}
+
+#buyMeACoffee {
+  text-decoration: none;
+  border-bottom: solid 3px black;
+}
+
+#buyMeACoffee img {
+  margin-top: 1%;
 }
 
 /* Media Queries */

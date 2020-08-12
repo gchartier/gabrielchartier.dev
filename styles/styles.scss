@@ -3,14 +3,13 @@ $primaryBlack: rgb(31, 30, 34);
 $primaryWhite: rgb(239, 247, 255);
 $accentGreen: rgb(103, 163, 111);
 $cardColor: rgb(40, 39, 44);
-$fontFamily: futura;
 $buttonTextSize: 1.4rem;
 
 /* Base Styles */
 * {
     margin: 0;
     padding: 0;
-    font-family: $fontFamily;
+    font-family: "Overpass", sans-serif;
 }
 
 html {
@@ -47,13 +46,18 @@ button {
 }
 
 .projectCard {
-    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     background: $cardColor;
     border-radius: 12px;
     padding: 3%;
 }
-
 
 /* Landing Page */
 #mainContent {
@@ -80,25 +84,25 @@ button {
             display: none;
             width: 80px;
         }
-    
+
         #mobileNav {
             display: none;
         }
-    
+
         ul {
             display: flex;
             flex-direction: column;
         }
-    
+
         li {
             list-style: none;
             margin-top: 15px;
         }
-    
+
         div:nth-child(1) {
             display: flex;
             align-items: flex-end;
-    
+
             a {
                 text-decoration: none;
                 color: $primaryWhite;
@@ -109,11 +113,11 @@ button {
                 color: $accentGreen;
             }
         }
-    
+
         div:nth-child(2) {
             display: flex;
             align-items: flex-end;
-    
+
             img {
                 cursor: pointer;
                 padding: 12px;
@@ -131,7 +135,9 @@ button {
 
         h1 {
             color: $primaryWhite;
-            font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+            font-size: calc(
+                40px + (80 - 40) * ((100vw - 300px) / (1600 - 300))
+            );
         }
 
         h3 {
@@ -179,7 +185,6 @@ nav ul li {
 
 /* About Me */
 #aboutMe {
-
     > div {
         display: flex;
         align-items: center;
@@ -202,7 +207,9 @@ nav ul li {
 #skills {
     background-color: $primaryBlack;
 
-    h2, p, h5 {
+    h2,
+    p,
+    h5 {
         color: $primaryWhite;
     }
 
@@ -223,7 +230,7 @@ nav ul li {
 
 .skillCategory {
     margin: 2% 2% 2% 0;
-    
+
     h4 {
         color: rgb(103, 163, 111);
         margin-bottom: 2%;
@@ -232,21 +239,22 @@ nav ul li {
 
 /* Projects */
 #projects {
-  background-color: $primaryBlack;
-  color: $primaryWhite;
+    background-color: $primaryBlack;
+    color: $primaryWhite;
 
-  p a {
-      text-decoration: none;
-      color: $accentGreen;
-  }
+    p a {
+        text-decoration: none;
+        color: $accentGreen;
+    }
 
-  h2, p {
-      margin-bottom: 3%;
-  }
+    h2,
+    p {
+        margin-bottom: 3%;
+    }
 
-  div.container {
-      padding-top: 0;
-  }
+    div.container {
+        padding-top: 0;
+    }
 }
 
 .projectCard {
@@ -265,7 +273,7 @@ nav ul li {
 
     > div {
         padding: 0 2%;
-        
+
         p {
             padding: 3% 0;
         }
@@ -286,7 +294,8 @@ nav ul li {
 #contact {
     background-color: $primaryWhite;
 
-    h2, p {
+    h2,
+    p {
         text-align: center;
         margin-bottom: 3%;
     }
@@ -306,7 +315,8 @@ nav ul li {
     }
 }
 
-input, textarea {
+input,
+textarea {
     background-color: $primaryBlack;
     color: $primaryWhite;
     border: none;
@@ -329,15 +339,22 @@ footer {
     padding: 3%;
 
     a {
-        
         color: $primaryBlack;
+    }
+}
+
+#buyMeACoffee {
+    text-decoration: none;
+    border-bottom: solid 3px black;
+
+    img {
+        margin-top: 1%;
     }
 }
 
 /* Media Queries */
 
 @media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
-
     #mainContent > div {
         align-items: flex-start;
 
@@ -357,7 +374,7 @@ footer {
     .navList {
         transform-origin: 0% 0%;
         transform: translate(130%, 0);
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
         background-color: $primaryWhite;
         height: 300px;
         width: 200px;
@@ -399,7 +416,6 @@ footer {
 
 @media only screen and (max-width: 794px) and (-webkit-min-device-pixel-ratio: 1) {
     .projectCard {
-        
         flex-direction: column;
         align-content: center;
 
@@ -427,7 +443,7 @@ footer {
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
     #mainContent > div {
         button {
-            font-size: $buttonTextSize - .3;
+            font-size: $buttonTextSize - 0.3;
         }
     }
 
