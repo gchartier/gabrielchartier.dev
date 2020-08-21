@@ -1,13 +1,16 @@
-/* Variables */
 /* Base Styles */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Overpass", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 h2 {
@@ -160,7 +163,7 @@ button {
 
 #mainContent div h1 {
   color: #eff7ff;
-  font-size: calc( 40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #mainContent div h3 {
@@ -294,6 +297,10 @@ nav ul li {
   padding-top: 0;
 }
 
+#projects .projectCard:first-of-type {
+  margin-top: 4%;
+}
+
 .projectCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +310,8 @@ nav ul li {
 }
 
 .projectCard > img {
-  height: 280px;
+  max-width: 100%;
+  height: auto;
 }
 
 .projectCard h4 {
@@ -312,7 +320,7 @@ nav ul li {
 }
 
 .projectCard > div {
-  padding: 0 2%;
+  width: 50%;
 }
 
 .projectCard > div p {
@@ -396,22 +404,36 @@ textarea {
 
 /* Footer */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #eff7ff;
-  text-align: center;
   padding: 3%;
 }
 
 footer a {
+  display: block;
+  margin: 2%;
   color: #1f1e22;
 }
 
 #buyMeACoffee {
   text-decoration: none;
-  border-bottom: solid 3px black;
 }
 
 #buyMeACoffee img {
   margin-top: 1%;
+}
+
+#buyMeACoffee:hover {
+  border-bottom: solid 3px black;
 }
 
 /* Media Queries */
@@ -491,14 +513,6 @@ footer a {
             flex-direction: column;
     -ms-flex-line-pack: center;
         align-content: center;
-  }
-  .projectCard > img {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    padding: 4% 0;
-    max-width: 70%;
-    height: auto;
   }
   .projectCard > div {
     text-align: center;
