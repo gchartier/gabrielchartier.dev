@@ -25,6 +25,10 @@ h4 {
   font-size: 1.3rem;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
 button {
   background-color: transparent;
   padding: 10px 18px;
@@ -240,6 +244,33 @@ nav ul li {
   height: 200px;
 }
 
+#education {
+  background-color: #1f1e22;
+}
+
+#education h2,
+#education p,
+#education li {
+  color: #eff7ff;
+}
+
+#education a {
+  text-decoration: none;
+  color: #67a36f;
+}
+
+#education a:hover {
+  text-decoration: underline;
+}
+
+#education ul {
+  margin: 2% 0 2% 5%;
+}
+
+#education li {
+  font-size: 1.2rem;
+}
+
 /* Skills */
 #skills {
   background-color: #1f1e22;
@@ -257,6 +288,10 @@ nav ul li {
 
 #skills h5 {
   padding: 1% 0;
+}
+
+#skills div.container {
+  padding-top: 0;
 }
 
 #skillCategories {
@@ -288,6 +323,10 @@ nav ul li {
   color: #67a36f;
 }
 
+#projects p a:hover {
+  text-decoration: underline;
+}
+
 #projects h2,
 #projects p {
   margin-bottom: 3%;
@@ -305,13 +344,7 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 8% 0;
-  padding: 4%;
-}
-
-.projectCard > img {
-  max-width: 100%;
-  height: auto;
+  margin: 4% 0;
 }
 
 .projectCard h4 {
@@ -319,12 +352,37 @@ nav ul li {
   padding: 1% 0;
 }
 
-.projectCard > div {
-  width: 50%;
+.projectDetails,
+.projectScreenshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projectCard > div p {
-  padding: 3% 0;
+.projectDetails {
+  width: 40%;
+}
+
+.projectDetails p {
+  font-size: 1rem;
+}
+
+.projectDetails span {
+  color: #eff7ff;
+}
+
+.projectScreenshots {
+  width: 60%;
+}
+
+.projectScreenshots img {
+  width: 100%;
 }
 
 .projectCardNav {
@@ -385,6 +443,19 @@ nav ul li {
           align-items: center;
 }
 
+#contactLinks {
+  margin-top: 3%;
+}
+
+#contactLinks a {
+  text-decoration: none;
+  color: #67a36f;
+}
+
+#contactLinks a:hover {
+  text-decoration: underline;
+}
+
 input,
 textarea {
   background-color: #1f1e22;
@@ -420,20 +491,22 @@ footer {
 
 footer a {
   display: block;
-  margin: 2%;
+  margin-top: 1rem;
+  text-decoration: none;
   color: #1f1e22;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 #buyMeACoffee {
   text-decoration: none;
-}
-
-#buyMeACoffee img {
-  margin-top: 1%;
+  color: #67a36f;
 }
 
 #buyMeACoffee:hover {
-  border-bottom: solid 3px black;
+  text-decoration: underline;
 }
 
 /* Media Queries */
@@ -497,15 +570,9 @@ footer a {
   #skills h2 {
     padding-top: 8%;
   }
-  .projectCard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
-@media only screen and (max-width: 794px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 950px) and (-webkit-min-device-pixel-ratio: 1) {
   .projectCard {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -513,9 +580,21 @@ footer a {
             flex-direction: column;
     -ms-flex-line-pack: center;
         align-content: center;
+    padding: 4%;
+    margin: 8% 0;
   }
-  .projectCard > div {
-    text-align: center;
+  .projectDetails {
+    width: 100%;
+  }
+  .projectDetails > div {
+    padding: 4% 6%;
+  }
+  .projectScreenshots {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .projectCardNav {
+    padding-top: 6%;
   }
 }
 
@@ -532,7 +611,7 @@ footer a {
 
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
   #mainContent > div button {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   #skillCategories {
     display: -ms-grid;

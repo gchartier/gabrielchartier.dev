@@ -5,8 +5,9 @@ $cardColor: rgb(40, 39, 44);
 $buttonFontSize: 1.4rem;
 $bodyFontSize: 1.2rem;
 $h2Size: 2.4rem;
-$h3Size: 2rem;
-$h4Size: 1.5rem;
+$h3Size: 1.9rem;
+$h4Size: 1.7rem;
+$h5Size: 1rem;
 
 /* Base Styles */
 * {
@@ -35,6 +36,10 @@ h4 {
     font-size: 1.3rem;
 }
 
+h5 {
+    font-size: $h5Size;
+}
+
 button {
     background-color: transparent;
     padding: 10px 18px;
@@ -43,6 +48,15 @@ button {
     margin: 20px;
     font-size: $buttonFontSize;
     cursor: pointer;
+}
+
+@mixin link($color) {
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .container {
@@ -206,6 +220,28 @@ nav ul li {
     }
 }
 
+#education {
+    background-color: $primaryBlack;
+
+    h2,
+    p,
+    li {
+        color: $primaryWhite;
+    }
+
+    a {
+        @include link($accentGreen);
+    }
+
+    ul {
+        margin: 2% 0 2% 5%;
+    }
+
+    li {
+        font-size: $bodyFontSize;
+    }
+}
+
 /* Skills */
 #skills {
     background-color: $primaryBlack;
@@ -222,6 +258,10 @@ nav ul li {
 
     h5 {
         padding: 1% 0;
+    }
+
+    div.container {
+        padding-top: 0;
     }
 }
 
@@ -246,8 +286,7 @@ nav ul li {
     color: $primaryWhite;
 
     p a {
-        text-decoration: none;
-        color: $accentGreen;
+        @include link($accentGreen);
     }
 
     h2,
@@ -266,25 +305,37 @@ nav ul li {
 
 .projectCard {
     display: flex;
-    margin: 8% 0;
-    padding: 4%;
-
-    > img {
-        max-width: 100%;
-        height: auto;
-    }
+    margin: 4% 0;
 
     h4 {
         color: $accentGreen;
         padding: 1% 0;
     }
+}
 
-    > div {
-        //padding: 0 2%;
-        width: 50%;
-        p {
-            padding: 3% 0;
-        }
+.projectDetails,
+.projectScreenshots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetails {
+    width: 40%;
+    p {
+        font-size: $h5Size;
+    }
+
+    span {
+        color: $primaryWhite;
+    }
+}
+
+.projectScreenshots {
+    width: 60%;
+
+    img {
+        width: 100%;
     }
 }
 
@@ -323,6 +374,18 @@ nav ul li {
     }
 }
 
+#contactLinks {
+    margin-top: 3%;
+    a {
+        text-decoration: none;
+        color: $accentGreen;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 input,
 textarea {
     background-color: $primaryBlack;
@@ -350,21 +413,14 @@ footer {
 
     a {
         display: block;
-        margin: 2%;
-        color: $primaryBlack;
+        margin-top: 1rem;
+
+        @include link($primaryBlack);
     }
 }
 
 #buyMeACoffee {
-    text-decoration: none;
-
-    img {
-        margin-top: 1%;
-    }
-
-    &:hover {
-        border-bottom: solid 3px black;
-    }
+    @include link($accentGreen);
 }
 
 /* Media Queries */
@@ -423,27 +479,30 @@ footer {
     #skills h2 {
         padding-top: 8%;
     }
-
-    .projectCard {
-        flex-direction: column;
-    }
 }
 
-@media only screen and (max-width: 794px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 950px) and (-webkit-min-device-pixel-ratio: 1) {
     .projectCard {
         flex-direction: column;
         align-content: center;
+        padding: 4%;
+        margin: 8% 0;
+    }
 
-        // > img {
-        //     align-self: center;
-        //     padding: 4% 0;
-        //     max-width: 70%;
-        //     height: auto;
-        // }
-
+    .projectDetails {
+        width: 100%;
         > div {
-            text-align: center;
+            padding: 4% 6%;
         }
+    }
+
+    .projectScreenshots {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .projectCardNav {
+        padding-top: 6%;
     }
 }
 
@@ -458,7 +517,7 @@ footer {
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
     #mainContent > div {
         button {
-            font-size: $buttonFontSize - 0.3;
+            font-size: 0.9rem;
         }
     }
 
