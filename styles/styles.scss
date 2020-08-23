@@ -170,7 +170,7 @@ button {
 
         button:hover {
             background-color: $accentGreen;
-            color: $primaryWhite;
+            color: $primaryBlack;
         }
     }
 }
@@ -200,30 +200,34 @@ nav ul li {
     align-items: center;
 }
 
+.sectionHeading {
+    display: inline-block;
+    background-color: $accentGreen;
+    color: $primaryBlack;
+    margin: 3rem 0;
+    padding: 0 3rem;
+    border-radius: 0 25px 25px 0;
+    line-height: 3rem;
+}
+
+.sectionContent {
+    width: 90%;
+    margin: auto;
+}
+
 /* About Me */
 #aboutMe {
-    > div {
-        display: flex;
-        align-items: center;
-    }
-
-    h2 {
-        margin-bottom: 3%;
-    }
+    background-color: $primaryBlack;
 
     p {
         margin-right: 1%;
-    }
-
-    img {
-        height: 200px;
+        color: $primaryWhite;
     }
 }
 
 #education {
     background-color: $primaryBlack;
 
-    h2,
     p,
     li {
         color: $primaryWhite;
@@ -234,7 +238,7 @@ nav ul li {
     }
 
     ul {
-        margin: 2% 0 2% 5%;
+        margin: 0 0 1rem 1rem;
     }
 
     li {
@@ -246,22 +250,17 @@ nav ul li {
 #skills {
     background-color: $primaryBlack;
 
-    h2,
     p,
     h5 {
         color: $primaryWhite;
     }
 
     p {
-        margin: 2% 0;
+        margin-bottom: 1rem;
     }
 
     h5 {
         padding: 1% 0;
-    }
-
-    div.container {
-        padding-top: 0;
     }
 }
 
@@ -283,7 +282,6 @@ nav ul li {
 /* Projects */
 #projects {
     background-color: $primaryBlack;
-    color: $primaryWhite;
 
     p a {
         @include link($accentGreen);
@@ -294,23 +292,24 @@ nav ul li {
         margin-bottom: 3%;
     }
 
-    div.container {
-        padding-top: 0;
-    }
-
     .projectCard:first-of-type {
         margin-top: 4%;
+    }
+
+    .projectCard:last-of-type {
+        margin-bottom: 0;
+    }
+
+    padding-bottom: 4%;
+
+    div.sectionContent p {
+        color: $primaryWhite;
     }
 }
 
 .projectCard {
     display: flex;
     margin: 4% 0;
-
-    h4 {
-        color: $accentGreen;
-        padding: 1% 0;
-    }
 }
 
 .projectDetails,
@@ -324,10 +323,20 @@ nav ul li {
     width: 40%;
     p {
         font-size: $h5Size;
+        color: $primaryWhite;
+    }
+
+    h3 {
+        color: $accentGreen;
     }
 
     span {
+        color: $accentGreen;
+    }
+
+    h4 {
         color: $primaryWhite;
+        padding: 1% 0;
     }
 }
 
@@ -344,13 +353,17 @@ nav ul li {
     justify-content: space-evenly;
     text-align: center;
     a {
-        color: $accentGreen;
         text-decoration: none;
+    }
+
+    p {
+        color: $accentGreen;
     }
 }
 
 /* Contact */
 #contact {
+    padding: 3rem 0;
     background-color: $primaryWhite;
 
     h2,

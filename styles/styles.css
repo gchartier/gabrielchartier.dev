@@ -183,7 +183,7 @@ button {
 
 #mainContent div button:hover {
   background-color: #67a36f;
-  color: #eff7ff;
+  color: #1f1e22;
 }
 
 header {
@@ -222,33 +222,35 @@ nav ul li {
           align-items: center;
 }
 
-/* About Me */
-#aboutMe > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.sectionHeading {
+  display: inline-block;
+  background-color: #67a36f;
+  color: #1f1e22;
+  margin: 3rem 0;
+  padding: 0 3rem;
+  border-radius: 0 25px 25px 0;
+  line-height: 3rem;
 }
 
-#aboutMe h2 {
-  margin-bottom: 3%;
+.sectionContent {
+  width: 90%;
+  margin: auto;
+}
+
+/* About Me */
+#aboutMe {
+  background-color: #1f1e22;
 }
 
 #aboutMe p {
   margin-right: 1%;
-}
-
-#aboutMe img {
-  height: 200px;
+  color: #eff7ff;
 }
 
 #education {
   background-color: #1f1e22;
 }
 
-#education h2,
 #education p,
 #education li {
   color: #eff7ff;
@@ -264,7 +266,7 @@ nav ul li {
 }
 
 #education ul {
-  margin: 2% 0 2% 5%;
+  margin: 0 0 1rem 1rem;
 }
 
 #education li {
@@ -276,22 +278,17 @@ nav ul li {
   background-color: #1f1e22;
 }
 
-#skills h2,
 #skills p,
 #skills h5 {
   color: #eff7ff;
 }
 
 #skills p {
-  margin: 2% 0;
+  margin-bottom: 1rem;
 }
 
 #skills h5 {
   padding: 1% 0;
-}
-
-#skills div.container {
-  padding-top: 0;
 }
 
 #skillCategories {
@@ -315,7 +312,7 @@ nav ul li {
 /* Projects */
 #projects {
   background-color: #1f1e22;
-  color: #eff7ff;
+  padding-bottom: 4%;
 }
 
 #projects p a {
@@ -332,12 +329,16 @@ nav ul li {
   margin-bottom: 3%;
 }
 
-#projects div.container {
-  padding-top: 0;
-}
-
 #projects .projectCard:first-of-type {
   margin-top: 4%;
+}
+
+#projects .projectCard:last-of-type {
+  margin-bottom: 0;
+}
+
+#projects div.sectionContent p {
+  color: #eff7ff;
 }
 
 .projectCard {
@@ -345,11 +346,6 @@ nav ul li {
   display: -ms-flexbox;
   display: flex;
   margin: 4% 0;
-}
-
-.projectCard h4 {
-  color: #67a36f;
-  padding: 1% 0;
 }
 
 .projectDetails,
@@ -371,10 +367,20 @@ nav ul li {
 
 .projectDetails p {
   font-size: 1rem;
+  color: #eff7ff;
+}
+
+.projectDetails h3 {
+  color: #67a36f;
 }
 
 .projectDetails span {
+  color: #67a36f;
+}
+
+.projectDetails h4 {
   color: #eff7ff;
+  padding: 1% 0;
 }
 
 .projectScreenshots {
@@ -396,12 +402,16 @@ nav ul li {
 }
 
 .projectCardNav a {
-  color: #67a36f;
   text-decoration: none;
+}
+
+.projectCardNav p {
+  color: #67a36f;
 }
 
 /* Contact */
 #contact {
+  padding: 3rem 0;
   background-color: #eff7ff;
 }
 
