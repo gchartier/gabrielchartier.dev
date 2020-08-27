@@ -1,0 +1,29 @@
+#skills {
+    p,
+    h5 {
+        color: $primaryWhite;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    h5 {
+        padding: 1% 0;
+    }
+}
+
+#skillCategories {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skillCategory {
+    margin: 2% 2% 2% 0;
+
+    h4 {
+        color: rgb(103, 163, 111);
+        margin-bottom: 2%;
+    }
+}

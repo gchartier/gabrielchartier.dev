@@ -1,0 +1,106 @@
+@media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
+    #mainContent > div {
+        align-items: flex-start;
+
+        button {
+            margin-left: 0;
+        }
+    }
+
+    #mainContent nav div img {
+        display: flex;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .navList {
+        transform-origin: 0% 0%;
+        transform: translate(130%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        background-color: $primaryWhite;
+        height: 300px;
+        width: 200px;
+    }
+
+    #mainContent nav div:nth-child(1) li a {
+        color: #1f1e22;
+    }
+
+    .open {
+        transform: translate(10%, 0);
+    }
+
+    #aboutMe > div {
+        flex-direction: column;
+
+        img {
+            order: 0;
+            margin: 8% 0;
+        }
+    }
+
+    #aboutMeContent {
+        order: 1;
+    }
+
+    #aboutMe {
+        padding-bottom: 8%;
+    }
+
+    #skills h2 {
+        padding-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 950px) and (-webkit-min-device-pixel-ratio: 1) {
+    .projectCard {
+        flex-direction: column;
+        align-content: center;
+        padding: 4%;
+        margin: 8% 0;
+    }
+
+    .projectDetails {
+        width: 100%;
+        > div {
+            padding: 4% 6%;
+        }
+    }
+
+    .projectScreenshots {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .projectCardNav {
+        padding-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1) {
+    #skillCategories {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
+    #mainContent > div {
+        button {
+            font-size: 0.9rem;
+        }
+    }
+
+    #skillCategories {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .skillCategory {
+        margin: 5% 0;
+    }
+}

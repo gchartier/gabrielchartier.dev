@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $primaryBlack;
+}
+
+p {
+    font-size: $bodyFontSize;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: $h5Size;
+}
+
+button {
+    background-color: transparent;
+    padding: 10px 18px;
+    border: 3px solid;
+    border-radius: 25px;
+    margin: 20px;
+    font-size: $buttonFontSize;
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    padding: 5% 0;
+    margin: auto;
+    display: block;
+}
+
+.sectionHeading {
+    display: inline-block;
+    background-color: $accentGreen;
+    color: $primaryBlack;
+    margin: 3rem 0;
+    padding: 0 3rem;
+    border-radius: 0 25px 25px 0;
+    line-height: 3rem;
+}
+
+.sectionContent {
+    width: 90%;
+    margin: auto;
+}

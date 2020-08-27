@@ -1,0 +1,53 @@
+#contact {
+    padding: 3rem 0;
+    background-color: $primaryWhite;
+
+    h2,
+    p {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#contactLinks {
+    margin-top: 3%;
+    a {
+        text-decoration: none;
+        color: $accentGreen;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+input,
+textarea {
+    background-color: $primaryBlack;
+    color: $primaryWhite;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 3%;
+    width: 60vw;
+    max-width: 300px;
+}
+
+#contactButton:hover {
+    background-color: $primaryBlack;
+    color: $primaryWhite;
+}
