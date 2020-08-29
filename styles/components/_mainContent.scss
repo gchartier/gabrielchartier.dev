@@ -1,26 +1,30 @@
 #mainContent {
     display: flex;
-    justify-content: space-between;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
     background: url(../images/HeroRect.svg) no-repeat top left;
+}
+
+.heroContents {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 8% 0 0 8%;
+    margin-top: 10%;
 
     h1 {
         color: $primaryWhite;
-        font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+        font-size: $h1Size;
     }
 
     h3 {
-        color: $primaryWhite;
-        font-size: 2rem;
+        font-size: $h3Size;
         color: $accentGreen;
     }
 

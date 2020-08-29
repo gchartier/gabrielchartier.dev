@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
@@ -29,16 +29,16 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 button {
   background-color: transparent;
-  padding: 10px 18px;
+  padding: 2% 3%;
   border: 3px solid;
-  border-radius: 25px;
-  margin: 20px;
-  font-size: 1.4rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
   cursor: pointer;
 }
 
@@ -65,15 +65,7 @@ button {
 }
 
 @media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mainContent > div {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #mainContent > div button {
-    margin-left: 0;
-  }
-  #mainContent nav div img {
+  #mainContent nav img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,7 +86,7 @@ button {
     height: 300px;
     width: 200px;
   }
-  #mainContent nav div:nth-child(1) li a {
+  nav li a {
     color: #1f1e22;
   }
   .open {
@@ -150,6 +142,9 @@ button {
   .projectCardNav {
     padding-top: 6%;
   }
+  .navList li a {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -164,9 +159,6 @@ button {
 }
 
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mainContent > div button {
-    font-size: 0.9rem;
-  }
   #skillCategories {
     display: -ms-grid;
     display: grid;
@@ -184,16 +176,25 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   background: url(../images/HeroRect.svg) no-repeat top left;
+}
+
+.heroContents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,36 +205,44 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 8% 0 0 8%;
+  margin-top: 10%;
 }
 
-.hero h1 {
+.heroContents h1 {
   color: #eff7ff;
-  font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(40px + (110 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.hero h3 {
-  color: #eff7ff;
-  font-size: 2rem;
+.heroContents h3 {
+  font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: #67a36f;
 }
 
-.hero button {
+.heroContents button {
   border-color: #67a36f;
   color: #67a36f;
 }
 
-.hero button:hover {
+.heroContents button:hover {
   background-color: #67a36f;
   color: #0a0a0a;
 }
 
 header {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  height: 95vh;
-  margin: 2.5vh 2.5vw;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav {
@@ -250,13 +259,11 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: url(../images/NavRect.svg) no-repeat top right;
+  padding: 0 0 3rem 3rem;
 }
 
-nav div {
-  width: 100px;
-}
-
-nav div img {
+nav img {
   display: none;
   width: 80px;
 }
@@ -273,52 +280,8 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin-top: 15px;
-}
-
-nav div:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-nav div:nth-child(1) a {
-  text-decoration: none;
-  color: #eff7ff;
-  font-size: 1.8rem;
-}
-
-nav div:nth-child(1) a:hover {
-  color: #67a36f;
-}
-
-nav div:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-nav div:nth-child(2) img {
-  cursor: pointer;
-  padding: 12px;
-}
-
-nav ul li {
+  margin-top: 1rem;
   margin-right: 5px;
-}
-
-.mobileNavIcon {
-  width: 80px;
-}
-
-#mobileNav {
-  display: none;
 }
 
 .navList {
@@ -335,16 +298,55 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 5%;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #eff7ff;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.navList a:hover {
+  color: #67a36f;
+}
+
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.socialList img {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.mobileNavIcon {
+  width: 80px;
+}
+
+#mobileNav {
+  display: none;
 }
 
 #aboutMe p {
   margin-right: 1%;
   color: #eff7ff;
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #education p,
 #education li {
   color: #eff7ff;
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #education a {
@@ -361,7 +363,7 @@ nav ul li {
 }
 
 #education li {
-  font-size: 1.2rem;
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #skills p,
@@ -371,6 +373,7 @@ nav ul li {
 
 #skills p {
   margin-bottom: 1rem;
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #skills h5 {
@@ -455,7 +458,7 @@ nav ul li {
 }
 
 .projectDetails p {
-  font-size: 1rem;
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
   color: #eff7ff;
 }
 

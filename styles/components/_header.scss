@@ -1,7 +1,10 @@
 header {
-    order: 1;
-    height: 95vh;
-    margin: 2.5vh 2.5vw;
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //margin: 2.5vh 2.5vw;
 }
 
 nav {
@@ -9,12 +12,10 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    background: url(../images/NavRect.svg) no-repeat top right;
+    padding: 0 0 3rem 3rem;
 
-    div {
-        width: 100px;
-    }
-
-    div img {
+    img {
         display: none;
         width: 80px;
     }
@@ -26,37 +27,38 @@ nav {
 
     li {
         list-style: none;
-        margin-top: 15px;
-    }
-
-    div:nth-child(1) {
-        display: flex;
-        align-items: flex-end;
-
-        a {
-            text-decoration: none;
-            color: $primaryWhite;
-            font-size: 1.8rem;
-        }
-
-        a:hover {
-            color: $accentGreen;
-        }
-    }
-
-    div:nth-child(2) {
-        display: flex;
-        align-items: flex-end;
-
-        img {
-            cursor: pointer;
-            padding: 12px;
-        }
+        margin-top: 1rem;
+        margin-right: 5px;
     }
 }
 
-nav ul li {
-    margin-right: 5px;
+.navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+
+    a {
+        text-decoration: none;
+        color: $primaryWhite;
+        font-size: $h5Size;
+    }
+
+    a:hover {
+        color: $accentGreen;
+    }
+}
+
+.socialList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img {
+        cursor: pointer;
+        padding: 12px;
+    }
 }
 
 .mobileNavIcon {
@@ -65,11 +67,4 @@ nav ul li {
 
 #mobileNav {
     display: none;
-}
-
-.navList {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }

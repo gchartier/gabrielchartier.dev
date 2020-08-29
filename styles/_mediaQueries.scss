@@ -1,13 +1,13 @@
 @media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
-    #mainContent > div {
-        align-items: flex-start;
+    // #mainContent > div {
+    //     align-items: flex-start;
 
-        button {
-            margin-left: 0;
-        }
-    }
+    //     button {
+    //         margin-left: 0;
+    //     }
+    // }
 
-    #mainContent nav div img {
+    #mainContent nav img {
         display: flex;
     }
 
@@ -24,7 +24,7 @@
         width: 200px;
     }
 
-    #mainContent nav div:nth-child(1) li a {
+    nav li a {
         color: #1f1e22;
     }
 
@@ -77,6 +77,10 @@
     .projectCardNav {
         padding-top: 6%;
     }
+
+    .navList li a {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -88,11 +92,11 @@
 }
 
 @media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
-    #mainContent > div {
-        button {
-            font-size: 0.9rem;
-        }
-    }
+    // #mainContent > div {
+    //     button {
+    //         font-size: 0.9rem;
+    //     }
+    // }
 
     #skillCategories {
         display: grid;

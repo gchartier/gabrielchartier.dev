@@ -2,12 +2,13 @@ $primaryBlack: rgb(10, 10, 10); //rgb(31, 30, 34);
 $primaryWhite: rgb(239, 247, 255);
 $accentGreen: rgb(103, 163, 111);
 $cardColor: rgb(40, 39, 44);
-$buttonFontSize: 1.4rem;
-$bodyFontSize: 1.2rem;
+$buttonFontSize: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
+$bodyFontSize: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+$h1Size: calc(40px + (110 - 40) * ((100vw - 300px) / (1600 - 300)));
 $h2Size: 2.4rem;
-$h3Size: 1.9rem;
+$h3Size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
 $h4Size: 1.7rem;
-$h5Size: 1rem;
+$h5Size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
 
 @mixin link($color) {
     text-decoration: none;
