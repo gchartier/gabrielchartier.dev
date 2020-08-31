@@ -1,9 +1,12 @@
 #projects {
+    padding-bottom: 4%;
+
     p a {
         @include link($accentGreen);
     }
 
-    h2,
+    h3,
+    h4,
     p {
         margin-bottom: 3%;
     }
@@ -15,8 +18,6 @@
     .projectCard:last-of-type {
         margin-bottom: 0;
     }
-
-    padding-bottom: 4%;
 
     div.sectionContent > p {
         color: $primaryWhite;
@@ -54,6 +55,7 @@
 
     h3 {
         color: $accentGreen;
+        font-size: calc(25px + (33 - 25) * ((100vw - 300px) / (1600 - 300)));
     }
 
     span {
@@ -84,5 +86,30 @@
 
     p {
         color: $accentGreen;
+    }
+}
+
+@media only screen and (max-width: 950px) and (-webkit-min-device-pixel-ratio: 1) {
+    .projectCard {
+        flex-direction: column;
+        align-content: center;
+        padding: 4%;
+        margin: 8% 0;
+    }
+
+    .projectDetails {
+        width: 100%;
+        > div {
+            padding: 4% 6%;
+        }
+    }
+
+    .projectScreenshots {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .projectCardNav {
+        padding-top: 6%;
     }
 }

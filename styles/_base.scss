@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,15 +18,15 @@ p {
 }
 
 h2 {
-    font-size: 2.3rem;
+    font-size: $h2Size;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: $h3Size;
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: $h4Size;
 }
 
 h5 {
@@ -39,6 +40,7 @@ button {
     border-radius: 2rem;
     margin: 1.5rem 0 1.5rem 1.5rem;
     font-size: $buttonFontSize;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -51,11 +53,10 @@ button {
 
 .sectionHeading {
     display: inline-block;
-    background-color: $accentGreen;
-    color: $primaryBlack;
+    color: $accentGreen;
+    border-bottom: 4px $accentGreen solid;
     margin: 3rem 0;
     padding: 0 3rem;
-    border-radius: 0 25px 25px 0;
     line-height: 3rem;
 }
 

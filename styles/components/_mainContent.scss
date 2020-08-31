@@ -23,8 +23,7 @@
         font-size: $h1Size;
     }
 
-    h3 {
-        font-size: $h3Size;
+    h2 {
         color: $accentGreen;
     }
 
@@ -36,5 +35,42 @@
     button:hover {
         background-color: $accentGreen;
         color: $primaryBlack;
+    }
+}
+
+@media only screen and (max-width: 950px) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero {
+        justify-content: flex-start;
+        padding-left: 5%;
+        background-image: url(../images/HeroRectMobile.svg);
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
+    .heroContents {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 5%;
+
+        button {
+            align-self: flex-end;
+            margin: 0.8rem 0 1rem 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 1) {
+    .heroContents {
+        h1 {
+            font-size: 2.2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 }
