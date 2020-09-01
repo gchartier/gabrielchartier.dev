@@ -8,12 +8,10 @@ footer {
     a {
         display: block;
         margin-top: 1rem;
-        font-size: $bodyFontSize;
         @include link($primaryBlack);
     }
 }
 
 #buyMeACoffee {
     @include link($accentGreen);
-    font-size: $bodyFontSize;
 }

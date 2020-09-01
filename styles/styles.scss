@@ -3,12 +3,7 @@ $primaryWhite: rgb(239, 247, 255);
 $accentGreen: rgb(103, 163, 111);
 $cardColor: rgb(40, 39, 44);
 $buttonFontSize: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
-$bodyFontSize: calc(10px + (25 - 10) * ((100vw - 300px) / (1600 - 300)));
 $h1Size: calc(40px + (110 - 40) * ((100vw - 300px) / (1600 - 300)));
-$h2Size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
-$h3Size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
-$h4Size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
-$h5Size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
 
 @import "helpers";
 @import "base";

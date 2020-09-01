@@ -49,13 +49,11 @@
 .projectDetails {
     width: 40%;
     p {
-        font-size: $h5Size;
         color: $primaryWhite;
     }
 
     h3 {
         color: $accentGreen;
-        font-size: calc(25px + (33 - 25) * ((100vw - 300px) / (1600 - 300)));
     }
 
     span {
