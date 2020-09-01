@@ -24,25 +24,25 @@ button {
   cursor: pointer;
 }
 
-.container {
-  width: 80%;
-  padding: 5% 0;
-  margin: auto;
-  display: block;
-}
-
 .sectionHeading {
   display: inline-block;
   color: #67a36f;
   border-bottom: 4px #67a36f solid;
-  margin: 3rem 0;
-  padding: 0 3rem;
-  line-height: 3rem;
+  margin: 3rem 0 1.5rem 0;
+  padding: 0 1rem;
+  line-height: 2.5rem;
 }
 
 .sectionContent {
   width: 90%;
   margin: auto;
+}
+
+.container {
+  width: 80%;
+  padding: 5% 0;
+  margin: auto;
+  display: block;
 }
 
 #mainContent {
@@ -336,17 +336,15 @@ nav img {
   margin: 0 0 1rem 1rem;
 }
 
-#skills p,
-#skills h4 {
+#skills li {
   color: #eff7ff;
+  padding: 1% 0;
+  list-style: none;
 }
 
 #skills p {
+  color: #eff7ff;
   margin-bottom: 1rem;
-}
-
-#skills h4 {
-  padding: 1% 0;
 }
 
 #skillCategories {
@@ -381,12 +379,7 @@ nav img {
         grid-template-rows: auto auto;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-  }
-}
-
-@media only screen and (max-width: 514px) and (-webkit-min-device-pixel-ratio: 1) {
-  #skills h2 {
-    padding-top: 8%;
+    margin: auto 30%;
   }
 }
 
@@ -398,6 +391,7 @@ nav img {
         grid-template-rows: auto;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    margin: auto 30%;
   }
   .skillCategory {
     margin: 5% 0;
