@@ -7,7 +7,7 @@
 
     p {
         color: $primaryWhite;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -15,14 +15,22 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-items: stretch;
     align-items: start;
+
+    // Set backgrounds rectangles for the skill categories
+    @for $i from 1 through 4 {
+        & > :nth-child(#{$i}) {
+            background: url("../images/SkillsRect#{$i}.svg") no-repeat center center;
+        }
+    }
 }
 
 .skillCategory {
-    margin: 2% 2% 2% 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 25%;
 
     h3 {
         color: $accentGreen;
@@ -30,13 +38,11 @@
     }
 }
 
-@media only screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     #skillCategories {
         display: grid;
         grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        margin: auto 10%;
-        grid-column-gap: 100px;
+        grid-template-columns: 50% 50%;
     }
 }
 
@@ -45,10 +51,5 @@
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto;
-        margin: auto 33%;
-    }
-
-    .skillCategory {
-        margin: 5% 0;
     }
 }

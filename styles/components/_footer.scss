@@ -2,13 +2,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $primaryWhite;
     padding: 3%;
+
+    p {
+        color: $primaryWhite;
+    }
 
     a {
         display: block;
         margin-top: 1rem;
-        @include link($primaryBlack);
+        @include link($primaryWhite);
     }
 }
 

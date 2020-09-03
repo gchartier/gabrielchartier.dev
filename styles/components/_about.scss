@@ -1,8 +1,16 @@
 #aboutMe {
-    p {
+    p,
+    li {
         margin-right: 1%;
         color: $primaryWhite;
-        //font-size: $bodyFontSize;
+    }
+
+    a {
+        @include link($accentGreen);
+    }
+
+    ul {
+        margin: 1rem 0 1rem 1rem;
     }
 }
 

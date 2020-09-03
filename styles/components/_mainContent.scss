@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     flex-grow: 2;
-    background: url(../images/HeroRect.svg) no-repeat top left;
+    background: url(../images/HeroRectLarge.svg) no-repeat top left;
 }
 
 .heroContents {
@@ -31,6 +31,7 @@
     button {
         border-color: $accentGreen;
         color: $accentGreen;
+        margin: 1.5rem 0 1.5rem 1.5rem;
     }
 
     button:hover {
@@ -43,7 +44,11 @@
     .hero {
         justify-content: flex-start;
         padding-left: 5%;
-        background-image: url(../images/HeroRectMobile.svg);
+        background-image: url(../images/HeroRectMedium.svg);
+
+        button {
+            margin: 1rem 0 0 0;
+        }
     }
 
     h1 {
@@ -52,32 +57,17 @@
     }
 }
 
-@media only screen and (max-width: 550px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 1) {
     .hero {
-        background-image: url(../images/HeroRectMobile2.svg);
+        padding-top: 30%;
+        background-image: url(../images/HeroRectSmall.svg);
     }
-}
 
-@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
-    // .heroContents {
-    //     justify-content: flex-start;
-    //     align-items: flex-start;
-    //     margin-top: 5%;
-
-    //     button {
-    //         align-self: flex-end;
-    //         margin: 0.8rem 0 1rem 1rem;
-    //     }
-    // }
-}
-
-@media only screen and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 1) {
-    // .heroContents {
-    //     h1 {
-    //         font-size: 2.2rem;
-    //     }
-    //     h2 {
-    //         font-size: 1.5rem;
-    //     }
-    // }
+    .heroContents {
+        align-items: flex-start;
+        button {
+            margin: 0.8rem 0 0 0;
+            align-self: center;
+        }
+    }
 }
