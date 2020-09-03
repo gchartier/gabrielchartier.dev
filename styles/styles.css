@@ -656,13 +656,4 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-#buyMeACoffee {
-  text-decoration: none;
-  color: #67a36f;
-}
-
-#buyMeACoffee:hover {
-  text-decoration: underline;
-}
 /*# sourceMappingURL=styles.css.map */

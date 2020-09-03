@@ -14,7 +14,3 @@ footer {
         @include link($primaryWhite);
     }
 }
-
-#buyMeACoffee {
-    @include link($accentGreen);
-}
