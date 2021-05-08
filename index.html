@@ -118,11 +118,14 @@
                             <div>
                                 <h3>Front-end</h3>
                                 <ul>
-                                    <li>React.js</li>
+                                    <li>React</li>
+                                    <li>NextJS</li>
+                                    <li>JavaScript ES6+</li>
+                                    <li>React-Query</li>
                                     <li>Sass / CSS</li>
-                                    <li>HTML / Markup</li>
-                                    <li>JavaScript ES6</li>
-                                    <li>TypeScript</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Styled Components</li>
+                                    <li>HTML</li>
                                 </ul>
                             </div>
                         </div>
@@ -130,10 +133,12 @@
                         <div class="skillCategory">
                             <h3>Back-end</h3>
                             <ul>
-                                <li>Django / Python</li>
+                                <li>Node.js (ES6+)</li>
+                                <li>NextJS API Routes</li>
                                 <li>REST APIs</li>
-                                <li>Node.js</li>
+                                <li>PostgreSQL</li>
                                 <li>MongoDB</li>
+                                <li>AWS SDK / S3</li>
                                 <li>Java</li>
                             </ul>
                         </div>
@@ -143,6 +148,7 @@
                             <ul>
                                 <li>Sketch</li>
                                 <li>AdobeXD</li>
+                                <li>Figma</li>
                                 <li>Material Design</li>
                                 <li>Adobe Suite</li>
                             </ul>
@@ -154,7 +160,7 @@
                                 <li>Git / GitHub</li>
                                 <li>Netlify</li>
                                 <li>Digital Ocean</li>
-                                <li>AWS S3</li>
+                                <li>Vercel</li>
                             </ul>
                         </div>
                     </div>
@@ -179,9 +185,57 @@
                                 target="_blank"
                             >
                                 this site</a
-                            >, here are the projects that I’ve built in my free time:
+                            >, here are the projects that I’ve most recently designed and built:
                         </em>
                     </p>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectScreenshots">
+                        <img
+                            src="/images/compendia.webp"
+                            alt="Compendia website showing the gorgeous UI of a comic book collecting website"
+                        />
+                    </div>
+                    <div class="projectDetails">
+                        <div>
+                            <h3>Compendia</h3>
+                            <h4>
+                                NextJS <span>/</span> React <span>/</span> Node.js
+                                <span>/</span> Tailwind CSS <span>/</span> React-Query
+                                <span>/</span> Magic Link Auth <span>/</span> PostgreSQL
+                                 <span>/</span> AWS S3
+                            </h4>
+                            <p>
+                                <i>Compendia</i> is a comic book collecting web app that makes it easy to explore weekly comic book releases,
+                                track a pull list of comics to pick up, and organize a comic book collection.
+                                <br /><br />
+                                This is a full-stack web app with a NextJS/React front-end, and a Node.js serverless functions back-end
+                                that retrieves data from a PostgreSQL database. As part of this project, I also wrote a 
+                                <a href="https://github.com/gchartier/compendia-scraper" target="_blank">web scraper</a> in Node.js that retrieves new comic 
+                                releases each week, hosts the cover images on AWS S3, and commits the releases to the PostgreSQL database.
+                            </p>
+                            <div class="projectCardNav">
+                                <a href="https://www.mycompendia.com" target="_blank">
+                                    <img
+                                        src="/images/viewSite.svg"
+                                        alt="Live website for Compendia"
+                                    />
+                                    <p>website</p>
+                                </a>
+                                <a
+                                    href="https://github.com/gchartier/compendia"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="/images/viewCode.svg"
+                                        alt="View code for Compendia"
+                                    />
+                                    <p>code</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="projectCard">
@@ -200,10 +254,12 @@
                                 <span>/</span> Sketch
                             </h4>
                             <p>
-                                <i>indieTube</i> is a filter on YouTube's Data API to show only
-                                independent content creators and filter out everything else. I
-                                designed and built this site in React to help myself and others
-                                find the videos they want faster.
+                                <i>indieTube</i> is a YouTube filter web app that queries YouTube's search results via the YouTube Data API
+                                and filters out any results that are not by independent content creators.
+                                <br /><br />
+                                This is a client-side React wep app styled using Styled Components / CSS that searches YouTube via the
+                                YouTube Data API v3 and filters out any results from channels that have been flagged by users as not "indie".
+                                I used React-Spring for animations, and built my own custom infinite scroll search functionality.
                             </p>
                             <div class="projectCardNav">
                                 <a href="https://indieTube.netlify.app" target="_blank">
@@ -240,13 +296,13 @@
                             <h3>Windham County Tees</h3>
                             <h4>
                                 HTML5 <span>/</span> CSS3 <span>/</span> Design
-                                <span>/</span> Copywriting
+                                <span>/</span> Netlify Forms <span>/</span> Copywriting
                             </h4>
                             <p>
                                 <i>Windham County Tees</i> is a small business in Connecticut
-                                that needed a website. I designed this site using Sketch, wrote
-                                all of the copy, and built it with accessibility and
-                                responsiveness in mind.
+                                that needed a web presence. I designed this site using Sketch, wrote
+                                all of the copy, and built it to be mobile-first and responsive. I also
+                                built a "Request a Quote" form that makes it easy to gather leads.
                             </p>
                             <div class="projectCardNav">
                                 <a href="https://www.windhamcountytees.com" target="_blank">
@@ -271,49 +327,6 @@
                     </div>
                 </div>
 
-                <div class="projectCard">
-                    <div class="projectScreenshots">
-                        <img
-                            src="/images/comingSoon.webp"
-                            alt="Compendia website showing the gorgeous UI of a comic book collecting website"
-                        />
-                    </div>
-                    <div class="projectDetails">
-                        <div>
-                            <h3>Compendia (In Progress)</h3>
-                            <h4>
-                                NextJS <span>/</span> React <span>/</span> Django
-                                <span>/</span> Python <span>/</span> MongoDB
-                            </h4>
-                            <p>
-                                <i>Compendia</i> is a full-stack comic book collecting web app
-                                to keep up with the latest comic book releases and manage a
-                                comic book collection. I built everything from front-end to
-                                back-end including the API built in Django which interacts with
-                                a MongoDB database.
-                            </p>
-                            <div class="projectCardNav">
-                                <a href="https://www.compendia-app.com" target="_blank">
-                                    <img
-                                        src="/images/viewSite.svg"
-                                        alt="Live website for Compendia"
-                                    />
-                                    <p>website</p>
-                                </a>
-                                <a
-                                    href="https://github.com/gchartier/compendia"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="/images/viewCode.svg"
-                                        alt="View code for Compendia"
-                                    />
-                                    <p>code</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 

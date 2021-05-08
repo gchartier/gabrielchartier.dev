@@ -584,7 +584,7 @@ nav img {
 }
 
 .inputGroup {
-  width: 100%;
+  width: 18rem;
 }
 
 #contactLinks {
@@ -609,7 +609,7 @@ textarea {
   padding: 10px;
   margin: 10% 0;
   width: 100%;
-  max-width: 400px;
+  max-width: 18rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
