@@ -13,7 +13,8 @@ body {
     background-color: $primaryBlack;
 }
 
-button {
+button,
+.button {
     background-color: transparent;
     padding: 0.5rem 1rem;
     border: 3px solid;

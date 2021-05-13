@@ -13,7 +13,8 @@ body {
   background-color: #0a0a0a;
 }
 
-button {
+button,
+.button {
   background-color: transparent;
   padding: 0.5rem 1rem;
   border: 3px solid;
@@ -91,13 +92,14 @@ button {
   font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.heroContents button {
+.heroContents a {
   border-color: #67a36f;
   color: #67a36f;
+  text-decoration: none;
   margin: 1.5rem 0 1.5rem 1.5rem;
 }
 
-.heroContents button:hover {
+.heroContents a:hover {
   background-color: #67a36f;
   color: #0a0a0a;
 }

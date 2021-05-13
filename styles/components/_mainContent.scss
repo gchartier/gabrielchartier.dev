@@ -29,13 +29,14 @@
         font-size: calc(20px + (55 - 20) * ((100vw - 300px) / (1600 - 300)));
     }
 
-    button {
+    a {
         border-color: $accentGreen;
         color: $accentGreen;
+        text-decoration: none;
         margin: 1.5rem 0 1.5rem 1.5rem;
     }
 
-    button:hover {
+    a:hover {
         background-color: $accentGreen;
         color: $primaryBlack;
     }
