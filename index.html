@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
-        <meta charset="utf-8" />
         <title>Gabriel Chartier - Web Dev</title>
         <link rel="stylesheet" href="/styles/styles.css" />
         <link rel="icon" href="/images/favicon.svg" />
@@ -9,8 +8,12 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
             rel="stylesheet"
         />
+        <meta charset="utf-8" />
+        <meta property="og:title" content="Gabriel Chartier - Web Dev Portfolio" />
+        <meta name="image" property="og:image" content="/images/portfolio.webp" />
+        <meta property="og:description" content="Hello! Welcome to my web development portfolio." />
+        <meta property="og:url" content="https://gabrielchartier.dev" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Hello! Welcome to my software development portfolio." />
         <meta name="author" content="Gabriel Chartier - www.gabrielchartier.dev" />
     </head>
 
@@ -20,7 +23,11 @@
                 <div class="heroContents">
                     <h1><span>Gabriel</span> <span>Chartier</span></h1>
                     <h2><span>web</span> <span>developer</span></h2>
-                    <a class="button" href="https://www.dropbox.com/s/wmj91vdltq9375z/GabrielChartierResume2021.pdf?dl=0" target="_blank">
+                    <a
+                        class="button"
+                        href="https://www.dropbox.com/s/87rn30z9zb0fr9y/Gabriel_Chartier_Resume_2021.pdf?dl=0"
+                        target="_blank"
+                    >
                         View Resume
                     </a>
                 </div>
@@ -73,18 +80,19 @@
                 </div>
                 <div class="sectionContent">
                     <p>
-                        I'm a creative and self-motivated web developer with an eye for
-                        design and an appetite for learning.
-                        </br>
-                        </br>
-                        I am currently a Senior Pega Systems Architect at <i>Infosys McCamish Systems</i>
-                        where I design and build client-facing life insurance CSR web apps in Pega, 
+                        I'm a creative and self-motivated web developer with an eye for design and a
+                        consistent appetite for learning new things.
+                        <br />
+                        <br />
+                        I am currently a Senior Pega Systems Engineer at
+                        <i>Infosys McCamish Systems</i>
+                        where I design and build client-facing life insurance CSR web apps in Pega,
                         a low-code software suite.
-                        </br>
-                        </br>
+                        <br />
+                        <br />
                         I'm looking to move into a web development role in the JavaScript ecosystem.
-                        Over the last year, I've built this portfolio and the projects within it in my
-                        free time.
+                        Over the last year, I've built this portfolio and the projects within it in
+                        my free time.
                     </p>
                     <ul>
                         <li>
@@ -94,15 +102,18 @@
                                 <li>
                                     Pega Certified Systems Architect (in use at my current employer)
                                 </li>
-                                <li>
-                                    Oracle Certified Java Associate
-                                </li>
+                                <li>Oracle Certified Java Associate</li>
                             </ul>
                         </li>
                     </ul>
                     <p>
-                        If you want to know more details regarding my work experience and
-                        education, please view my <a href="https://www.dropbox.com/s/wmj91vdltq9375z/GabrielChartierResume2021.pdf?dl=0" target="_blank">resume</a>.
+                        If you want to know more details regarding my work experience and education,
+                        please view my
+                        <a
+                            href="https://www.dropbox.com/s/87rn30z9zb0fr9y/Gabriel_Chartier_Resume_2021.pdf?dl=0"
+                            target="_blank"
+                            >resume</a
+                        >.
                     </p>
                 </div>
             </section>
@@ -125,13 +136,13 @@
                                 <h3>Front-end</h3>
                                 <ul>
                                     <li>React</li>
-                                    <li>NextJS</li>
+                                    <li>Next.js</li>
                                     <li>JavaScript ES6+</li>
                                     <li>React-Query</li>
-                                    <li>CSS / SCSS</li>
+                                    <li>CSS3 / SCSS</li>
                                     <li>Tailwind CSS</li>
                                     <li>Styled Components</li>
-                                    <li>HTML</li>
+                                    <li>HTML5</li>
                                 </ul>
                             </div>
                         </div>
@@ -140,7 +151,7 @@
                             <h3>Back-end</h3>
                             <ul>
                                 <li>Node.js ES6+</li>
-                                <li>NextJS API Routes</li>
+                                <li>Next.js API Routes</li>
                                 <li>REST APIs</li>
                                 <li>PostgreSQL</li>
                                 <li>MongoDB</li>
@@ -172,7 +183,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
 
         <section id="projects">
@@ -207,19 +217,27 @@
                         <div>
                             <h3>Compendia</h3>
                             <h4>
-                                NextJS <span>/</span> React <span>/</span> Node.js
+                                Next.js <span>/</span> React <span>/</span> Node.js
                                 <span>/</span> Tailwind CSS <span>/</span> React-Query
                                 <span>/</span> Magic Link Auth <span>/</span> PostgreSQL
-                                 <span>/</span> AWS S3
+                                <span>/</span> AWS S3
                             </h4>
                             <p>
-                                <i>Compendia</i> is a comic book collecting web app that makes it easy to explore weekly comic book releases,
-                                track a pull list of comics to pick up, and organize a comic book collection.
+                                <i>Compendia</i> is a comic book collecting web app that makes it
+                                easy to explore weekly comic book releases, track a pull list of
+                                comics to pick up, and organize a comic book collection.
                                 <br /><br />
-                                This is a full-stack web app with a NextJS/React front-end, and a Node.js serverless functions back-end
-                                that retrieves data from a PostgreSQL database. As part of this project, I also wrote a 
-                                <a href="https://github.com/gchartier/compendia-scraper" target="_blank">web scraper</a> in Node.js that retrieves new comic 
-                                releases each week, hosts the cover images on AWS S3, and commits the releases to the PostgreSQL database.
+                                This is a full-stack web app with a Next.js/React front-end, and a
+                                Node.js serverless functions back-end that retrieves data from a
+                                PostgreSQL database. As part of this project, I also wrote a
+                                <a
+                                    href="https://github.com/gchartier/compendia-scraper"
+                                    target="_blank"
+                                    >web scraper</a
+                                >
+                                in Node.js that retrieves new comic releases each week, hosts the
+                                cover images on AWS S3, and commits the releases to the PostgreSQL
+                                database.
                             </p>
                             <div class="projectCardNav">
                                 <a href="https://www.mycompendia.com" target="_blank">
@@ -229,14 +247,8 @@
                                     />
                                     <p>website</p>
                                 </a>
-                                <a
-                                    href="https://github.com/gchartier/compendia"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="/images/viewCode.svg"
-                                        alt="View code for Compendia"
-                                    />
+                                <a href="https://github.com/gchartier/compendia" target="_blank">
+                                    <img src="/images/viewCode.svg" alt="View code for Compendia" />
                                     <p>code</p>
                                 </a>
                             </div>
@@ -246,26 +258,24 @@
 
                 <div class="projectCard">
                     <div class="projectScreenshots">
-                        <img
-                            src="/images/indieTube.webp"
-                            alt="indieTube React App Screenshots"
-                        />
+                        <img src="/images/indieTube.webp" alt="indieTube React App Screenshots" />
                     </div>
                     <div class="projectDetails">
                         <div>
                             <h3>indieTube</h3>
                             <h4>
-                                React <span>/</span> Styled-Components
-                                <span>/</span> React-Spring <span>/</span> YouTube Data API
-                                <span>/</span> Sketch
+                                React <span>/</span> Styled-Components <span>/</span> React-Spring
+                                <span>/</span> YouTube Data API <span>/</span> Sketch
                             </h4>
                             <p>
-                                <i>indieTube</i> is a YouTube filter web app that queries YouTube's search results via the YouTube Data API
-                                and filters out any results that are not by independent content creators.
-                                <br /><br />
-                                This is a client-side React wep app styled using Styled Components / CSS that searches YouTube via the
-                                YouTube Data API v3 and filters out any results from channels that have been flagged by users as not "indie".
-                                I used React-Spring for animations, and built my own custom infinite scroll search functionality.
+                                <i>indieTube</i> is a YouTube filter web app that queries YouTube's
+                                search results via the YouTube Data API and filters out any results
+                                that are not by independent content creators. <br /><br />
+                                This is a client-side React wep app styled using Styled Components /
+                                CSS that searches YouTube via the YouTube Data API v3 and filters
+                                out any results from channels that have been flagged by users as not
+                                "indie". I used React-Spring for animations, and built my own custom
+                                infinite scroll search functionality.
                             </p>
                             <div class="projectCardNav">
                                 <a href="https://indieTube.netlify.app" target="_blank">
@@ -275,14 +285,8 @@
                                     />
                                     <p>website</p>
                                 </a>
-                                <a
-                                    href="https://github.com/gchartier/indieTube"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="/images/viewCode.svg"
-                                        alt="View code for indieTube"
-                                    />
+                                <a href="https://github.com/gchartier/indieTube" target="_blank">
+                                    <img src="/images/viewCode.svg" alt="View code for indieTube" />
                                     <p>code</p>
                                 </a>
                             </div>
@@ -305,9 +309,9 @@
                                 <span>/</span> Netlify Forms <span>/</span> Copywriting
                             </h4>
                             <p>
-                                <i>Windham County Tees</i> is a small business in Connecticut
-                                that needed a web presence. I designed this site using Sketch, wrote
-                                all of the copy, and built it to be mobile-first and responsive. I also
+                                <i>Windham County Tees</i> is a small business in Connecticut that
+                                needed a web presence. I designed this site using Sketch, wrote all
+                                of the copy, and built it to be mobile-first and responsive. I also
                                 built a "Request a Quote" form that makes it easy to gather leads.
                             </p>
                             <div class="projectCardNav">
@@ -332,7 +336,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
