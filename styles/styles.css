@@ -45,6 +45,12 @@ button,
   display: block;
 }
 
+em {
+  font-style: italic;
+  font-weight: 900;
+  color: white;
+}
+
 #mainContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,8 +301,7 @@ nav img {
   }
 }
 
-#aboutMe p,
-#aboutMe li {
+#aboutMe p {
   margin-right: 1%;
   color: #eff7ff;
 }
@@ -310,8 +315,8 @@ nav img {
   text-decoration: underline;
 }
 
-#aboutMe ul {
-  margin: 1rem 0 1rem 1rem;
+#aboutMe .sectionContent div {
+  max-width: 50rem;
 }
 
 @media only screen and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -326,11 +331,6 @@ nav img {
         -ms-flex-order: 0;
             order: 0;
     margin: 8% 0;
-  }
-  #aboutMeContent {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
   }
   #aboutMe {
     padding-bottom: 8%;
@@ -355,7 +355,9 @@ nav img {
       grid-template-columns: auto auto auto auto;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-row-gap: 20px;
+  row-gap: 1rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
   justify-items: stretch;
   -webkit-box-align: start;
       -ms-flex-align: start;

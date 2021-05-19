@@ -1,6 +1,5 @@
 #aboutMe {
-    p,
-    li {
+    p {
         margin-right: 1%;
         color: $primaryWhite;
     }
@@ -9,8 +8,8 @@
         @include link($accentGreen);
     }
 
-    ul {
-        margin: 1rem 0 1rem 1rem;
+    .sectionContent div {
+        max-width: 50rem;
     }
 }
 
@@ -22,10 +21,6 @@
             order: 0;
             margin: 8% 0;
         }
-    }
-
-    #aboutMeContent {
-        order: 1;
     }
 
     #aboutMe {
